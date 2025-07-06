@@ -1,0 +1,869 @@
+{
+  "books": [
+    {
+      "name": "Agriculture",
+      "class": "color-agriculture",
+      "items": [
+        { "title": "Better Gardening", "tooltip": "Book Number 1" },
+        { "title": "Growing Food at Home", "tooltip": "Book Number 2" },
+        { "title": "Liam Keating's Subsistence Farming", "tooltip": "Book Number 3" },
+        { "title": "The Science of Crop Genetics and Yields", "tooltip": "Book Number 4" },
+        { "title": "USDA Guide to Agricultural Output Maximization", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Aiming",
+      "class": "color-aiming",
+      "items": [
+        { "title": "Better Aiming", "tooltip": "Book Number 1" },
+        { "title": "Drawing and Shooting", "tooltip": "Book Number 2" },
+        { "title": "Leading Moving Targets", "tooltip": "Book Number 3" },
+        { "title": "Long Range Sniping Tactics", "tooltip": "Book Number 4" },
+        { "title": "Secrets From the World's Best Snipers", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Animal Care",
+      "class": "color-animalcare",
+      "items": [
+        { "title": "A Tale of St. Francis", "tooltip": "Book Number 1" },
+        { "title": "Animal Welfare Basics", "tooltip": "Book Number 2" },
+        { "title": "How Animals Think: A Helpful Guide", "tooltip": "Book Number 3" },
+        { "title": "The Wants and Needs of Diverse Fauna", "tooltip": "Book Number 4" },
+        { "title": "Wilds Tamed: An In-Depth Comparative", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Butchering",
+      "class": "color-butchering",
+      "items": [
+        { "title": "Butchering Basics", "tooltip": "Book Number 1" },
+        { "title": "From Chuck to Shank", "tooltip": "Book Number 2" },
+        { "title": "Hunter's Guide to Butchering", "tooltip": "Book Number 3" },
+        { "title": "Master Butcher's Complete Guide", "tooltip": "Book Number 4" },
+        { "title": "The Ergonomics of Tools in Meat Cutting Operations", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Carpentry",
+      "class": "color-carpentry",
+      "items": [
+        { "title": "A Guide to Nailing", "tooltip": "Book Number 1" },
+        { "title": "Carpentry, Woodcraft Style", "tooltip": "Book Number 2" },
+        { "title": "Hand Crafted Shelving and Storage", "tooltip": "Book Number 3" },
+        { "title": "Making Your Own Cabin From Scratch", "tooltip": "Book Number 4" },
+        { "title": "Site Joinery and Architectural Carpentry", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Carving",
+      "class": "color-carving",
+      "items": [
+        { "title": "Beginners Carving", "tooltip": "Book Number 1" },
+        { "title": "Cool Woodshaping Projects!", "tooltip": "Book Number 2" },
+        { "title": "Grinling Gibbons: His Life and Works", "tooltip": "Book Number 3" },
+        { "title": "Medieval Wood and Bone Carving Techniques", "tooltip": "Book Number 4" },
+        { "title": "The Art and Process of Natural Material Carving", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Cooking",
+      "class": "color-cooking",
+      "items": [
+        { "title": "Better Burger Flipping", "tooltip": "Book Number 1" },
+        { "title": "Essential Home Cooking Guide", "tooltip": "Book Number 2" },
+        { "title": "Flavorful Cuisine - 1993 Edition", "tooltip": "Book Number 3" },
+        { "title": "Professional Tips from a Master Chef", "tooltip": "Book Number 4" },
+        { "title": "Ruban Vert Gourmet - Complete Cooking Techniques", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Electrical",
+      "class": "color-electrical",
+      "items": [
+        { "title": "Basic Electronics", "tooltip": "Book Number 1" },
+        { "title": "Kentucky AV Guide '93", "tooltip": "Book Number 2" },
+        { "title": "Practical Wiring Guide", "tooltip": "Book Number 3" },
+        { "title": "Telecommunications in the 20th Century", "tooltip": "Book Number 4" },
+        { "title": "Understanding Integrated Controls for Electronic Systems", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "First Aid",
+      "class": "color-firstaid",
+      "items": [
+        { "title": "A Scouts Injury Guide", "tooltip": "Book Number 1" },
+        { "title": "Bandaging and Suturing", "tooltip": "Book Number 2" },
+        { "title": "Emergency Paramedics Manual", "tooltip": "Book Number 3" },
+        { "title": "Gray's Anatomy of the Human Body", "tooltip": "Book Number 4" },
+        { "title": "Surgical Techniques of the Operating Room", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Fishing",
+      "class": "color-fishing",
+      "items": [
+        { "title": "Dean's Good Fishing Guide", "tooltip": "Book Number 1" },
+        { "title": "Fly Fishing, with JR Hartley", "tooltip": "Book Number 2" },
+        { "title": "Fresh and Saltwater Fishing", "tooltip": "Book Number 3" },
+        { "title": "Latest Rod and Net Techniques", "tooltip": "Book Number 4" },
+        { "title": "The Authoritative Kentucky Fishing Guide", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Foraging",
+      "class": "color-foraging",
+      "items": [
+        { "title": "A Feast in the Forest", "tooltip": "Book Number 1" },
+        { "title": "Dean's Guide to Sticks & Stones", "tooltip": "Book Number 2" },
+        { "title": "Finding The Treasure in the Trash", "tooltip": "Book Number 3" },
+        { "title": "Survival Foraging: How Nature Can Save Your Life", "tooltip": "Book Number 4" },
+        { "title": "US Park Service Complete Nature Census - Kentucky", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Glassmaking",
+      "class": "color-glassmaking",
+      "items": [
+        { "title": "Glass: A History", "tooltip": "Book Number 1" },
+        { "title": "From Sand to Glass: A Journey", "tooltip": "Book Number 2" },
+        { "title": "Laboratory Manual of Glassblowing", "tooltip": "Book Number 3" },
+        { "title": "Secrets of the Carlow Crystal Makers", "tooltip": "Book Number 4" },
+        { "title": "Venetian Glass: An Electron Microprobe Analysis", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Knapping",
+      "class": "color-knapping",
+      "items": [
+        { "title": "Flint Knapping 101", "tooltip": "Book Number 1" },
+        { "title": "Guide to Kentucky Geology", "tooltip": "Book Number 2" },
+        { "title": "Lithic Technology Manual 1993", "tooltip": "Book Number 3" },
+        { "title": "Schmidt Rock Hardness Testing Techniques", "tooltip": "Book Number 4" },
+        { "title": "Technological Morphometrics of Clovis Artifacts", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Long Blade",
+      "class": "color-longblade",
+      "items": [
+        { "title": "Cool Swords!", "tooltip": "Book Number 1" },
+        { "title": "Fencing: A History", "tooltip": "Book Number 2" },
+        { "title": "Old Sword-Play by Alfred Hutton", "tooltip": "Book Number 3" },
+        { "title": "The Zettels of Johannes Liechtenauer", "tooltip": "Book Number 4" },
+        { "title": "Wear Analysis of Selected Medieval Swords", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Masonry",
+      "class": "color-masonry",
+      "items": [
+        { "title": "A Bricklayer's Life", "tooltip": "Book Number 1" },
+        { "title": "Flooring: Do It Yourself", "tooltip": "Book Number 2" },
+        { "title": "Dibnah's Guide to Bricks", "tooltip": "Book Number 3" },
+        { "title": "Secrets of a Professional Mason", "tooltip": "Book Number 4" },
+        { "title": "Statistical Analysis of Historic Masonry Constructions", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Mechanics",
+      "class": "color-mechanics",
+      "items": [
+        { "title": "Carzone's Repair Guide", "tooltip": "Book Number 1" },
+        { "title": "How Vehicle Engines Work", "tooltip": "Book Number 2" },
+        { "title": "Laine's Repair Manual '93", "tooltip": "Book Number 3" },
+        { "title": "Long Term Vehicle Maintenance", "tooltip": "Book Number 4" },
+        { "title": "Mastering Automotive Fault Diagnosis Techniques", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Metalworking",
+      "class": "color-metalworking",
+      "items": [
+        { "title": "Elementary Forge Practice", "tooltip": "Book Number 1" },
+        { "title": "General Purpose Blacksmithing", "tooltip": "Book Number 2" },
+        { "title": "Old West Smiths and Their Secrets", "tooltip": "Book Number 3" },
+        { "title": "Really Hard Steel Co. Workers Handbook", "tooltip": "Book Number 4" },
+        { "title": "The Complete Encyclopedia of Metallurgy", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Pottery",
+      "class": "color-pottery",
+      "items": [
+        { "title": "Ancient Pottery", "tooltip": "Book Number 1" },
+        { "title": "Build Your Own Kiln", "tooltip": "Book Number 2" },
+        { "title": "Glazing Ceramics at Home", "tooltip": "Book Number 3" },
+        { "title": "Ming Chinese Masterworks: A Guide", "tooltip": "Book Number 4" },
+        { "title": "Pyrometamorphic Process of Ceramic Materials", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Reloading",
+      "class": "color-reloading",
+      "items": [
+        { "title": "Basic Reloading", "tooltip": "Book Number 1" },
+        { "title": "Dead Man's Click", "tooltip": "Book Number 2" },
+        { "title": "Jungle Style Reloading", "tooltip": "Book Number 3" },
+        { "title": "Strippers, Speedloaders, and Bolt Action", "tooltip": "Book Number 4" },
+        { "title": "The Ultimate Encyclopedia of Reloading Techniques", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Tailoring",
+      "class": "color-tailoring",
+      "items": [
+        { "title": "Basic Clothing Repair", "tooltip": "Book Number 1" },
+        { "title": "From Rags to Royalty: A Sewing Guide", "tooltip": "Book Number 2" },
+        { "title": "Haute Couture Tailoring Methods", "tooltip": "Book Number 3" },
+        { "title": "Modern Patterns from the Catwalks of Paris", "tooltip": "Book Number 4" },
+        { "title": "Textile Production and Manufacturing Techniques", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Tracking",
+      "class": "color-tracking",
+      "items": [
+        { "title": "Animal Pawprints", "tooltip": "Book Number 1" },
+        { "title": "Hunting with Hemingway", "tooltip": "Book Number 2" },
+        { "title": "Long Range Animal Tracking", "tooltip": "Book Number 3" },
+        { "title": "The Smell of Ivory: An African Adventure", "tooltip": "Book Number 4" },
+        { "title": "Understanding Animal Behavior Through Spoor Placement", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Trapping",
+      "class": "color-trapping",
+      "items": [
+        { "title": "Basic Pest Control", "tooltip": "Book Number 1" },
+        { "title": "Better Trapping, with Dean", "tooltip": "Book Number 2" },
+        { "title": "Park Rangers Wildlife Handbook '93", "tooltip": "Book Number 3" },
+        { "title": "Research on Rodents and Mammals of Kentucky", "tooltip": "Book Number 4" },
+        { "title": "The Encyclopedia of Applied Animal Psychology", "tooltip": "Book Number 5" }
+      ]
+    },
+    {
+      "name": "Welding",
+      "class": "color-welding",
+      "items": [
+        { "title": "Basics of Welding", "tooltip": "Book Number 1" },
+        { "title": "Building with Metal", "tooltip": "Book Number 2" },
+        { "title": "Machining Metal: The Mass Genfac Guide", "tooltip": "Book Number 3" },
+        { "title": "Ore to Sheets: A Complete Metalworking Manual", "tooltip": "Book Number 4" },
+        { "title": "Technological Fundamentals of Metal Fabrication", "tooltip": "Book Number 5" }
+      ]
+    }
+  ],
+  "magazines": [
+    {
+      "name": "Agriculture",
+      "class": "color-agriculture",
+      "items": [
+        { "title": "Blooms and Blossoms", "tooltip": "Chamomile Growing Season, Marigold Growing Season, Sunflower Growing Season, Rose Growing Season, Poppy Growing Season, Lavender Growing Season" },
+        { "title": "Cropping for Cash", "tooltip": "Barley Growing Season, Corn Growing Season, Flax Growing Season, Rye Growing Season, Soybean Growing Season, Sugar Beet Growing Season, Tobacco Growing Season, Wheat Growing Season" },
+        { "title": "Growing Your Own", "tooltip": "Bell Pepper, Broccoli, Cabbage, Carrot, Cauliflower, Cucumber, Garlic, Green Pea, Habanero, Jalapeno, Kale, Leek, Lettuce, Onion, Potato, Pumpkin, Radish, Spinach, Strawberry, Sweet Potato, Tomato, Turnip, Watermelon, Zucchini Growing Seasons" },
+        { "title": "Kentucky Farmer - June 1993", "tooltip": "Make Mildew Cure" },
+        { "title": "Kentucky Farmer - May 1993", "tooltip": "Make Flies Cure from Cigarettes, Make Flies Cure from Loose Tobacco, Make Flies Cure from Chewing Tobacco, Make Aphids Cure" },
+        { "title": "Legalize It!", "tooltip": "Hemp Growing Season" },
+        { "title": "The Farmers Guide", "tooltip": "Make Scarecrow, Make Barbed Wire from Wire" },
+        { "title": "Thyme Time", "tooltip": "Basil Growing Season, Chives Growing Season, Cilantro Growing Season, Lemongrass Growing Season, Mint Growing Season, Oregano Growing Season, Parsley Growing Season, Sage Growing Season, Rosemary Growing Season, Thyme Growing Season, Hops Growing Season" }
+      ]
+    },
+    {
+      "name": "Cooking",
+      "class": "color-cooking",
+      "items": [
+        { "title": "Delicious Meals - June 1993", "tooltip": "Prepare Breaded Shrimp, Prepare Breaded Onion Rings, Make 4 Cabbage Rolls" },
+        { "title": "Good Cooking - June 1993", "tooltip": "Make Cake Batter, Prepare Pie Dough" },
+        { "title": "Good Cooking - May 1993", "tooltip": "Prepare Bread Dough, Prepare Baguette, Prepare Biscuits" },
+        { "title": "Italian Delights", "tooltip": "Prepare Pizza" },
+        { "title": "Grandma's Kitchen", "tooltip": "Prepare Chocolate Cookies, Prepare Chocolate Chip Cookies, Prepare Oatmeal Cookies, Prepare Sugar Cookies, Prepare Shortbread Cookies" },
+        { "title": "World Cooking", "tooltip": "Prepare Sushi, Prepare Maki, Prepare Onigiri" }
+      ]
+    },
+    {
+      "name": "Electrical",
+      "class": "color-electrical",
+      "items": [
+        { "title": "Guerilla Radio - June 1993", "tooltip": "Make Makeshift Radio" },
+        { "title": "Guerilla Radio - May 1993", "tooltip": "Make Makeshift Ham Radio" },
+        { "title": "Home Security Monthly", "tooltip": "Add Short-Range Motion Sensor to Bomb, Add Medium-Range Motion Sensor to Bomb, Add Long-Range Motion Sensor to Bomb" },
+        { "title": "How to Use Generators", "tooltip": "Generator Maintenance" },
+        { "title": "Like Clockwork", "tooltip": "Make Timer, Add Timer to Bomb" },
+        { "title": "Real Spy Secrets - June 1993", "tooltip": "Make Noise Maker, Make Firecracker" },
+        { "title": "Sparky's Lighting Guide", "tooltip": "Make Improvised Flashlight, Make Improvised Lantern" },
+        { "title": "Sparky's Radio Guide", "tooltip": "Make Makeshift Walkie Talkie" },
+        { "title": "The Cheapskate's John Spiral - Chemical Warfare", "tooltip": "Make Smoke Bomb, Make Gas Mask Filter, Make Improvised Gas Mask,Recharge Filters" },
+        { "title": "Zapper!", "tooltip": "Make Remote Controller (Short-Range), Make Remote Controller (Medium-Range), Make Remote Controller (Long-Range), Make Remote Trigger, Add Remote Trigger to Bomb" }
+      ]
+    },
+    {
+      "name": "Fishing",
+      "class": "color-fishing",
+      "items": [
+        { "title": "Angler USA - June 1993", "tooltip": "Make Fishing Rod, Fix Fishing Rod, Make Chum Base" },
+        { "title": "Angler USA - May 1993", "tooltip": "Make Fishing Net, Dismantle Fishing Net" }
+      ]
+    },
+    {
+      "name": "Foraging",
+      "class": "color-foraging",
+      "items": [
+        { "title": "Wilderness Survival", "tooltip": "Herbal Remedies, Knap Stone Blade, Fire Harden Spear, Make Improvised Whetstone, Grind Up Plantain, Grind Up Comfrey, Grind Up Wild Garlic, Black Sage Growing Season, Broadleaf Plantain Growing Season, Comfrey Growing Season, Common Mallow Growing Season, Wild Garlic Growing Season, Bind Spear Head" }
+      ]
+    },
+    {
+      "name": "Glassmaking",
+      "class": "color-glassmaking",
+      "items": [
+        { "title": "Bottle Making at Home", "tooltip": "Make Glass Bottle, Make Glass Jar" },
+        { "title": "Carlow Crystal Guide", "tooltip": "Make Drinking Glass, Make Glass Pane" },
+        { "title": "Murano Glass Manual", "tooltip": "Make Wine Glass" }
+      ]
+    },
+    {
+      "name": "Knapping",
+      "class": "color-knapping",
+      "items": [
+        { "title": "Cultures of Prehistory", "tooltip": "Carve Bone Fishing Hook, Knap Stone Awl, Knap Stone Chisel, Knap Stone Drill, Make Improvised Whetstone, Knap Flint Saw" },
+        { "title": "Tool Use of Early Man", "tooltip": "Knap Large Stone Axe Head, Knap Stone Maul Head, Bind Spear Head, Knap Stone Blade Scythe, Sharpen Bone, Carve Fleshing Tool" }
+      ]
+    },
+    {
+      "name": "Long Blade",
+      "class": "color-longblade",
+      "items": [
+        { "title": "Medieval Armory - June 1993", "tooltip": "Forge Crude Sword Blade, Forge Simple Shortsword Blade, Forge Sword Blade, Forge Shortsword Blade, Forge Spear Head, Forge Long Spear Head, Forge Handguard Dagger" }
+      ]
+    },
+    {
+      "name": "Mechanics",
+      "class": "color-mechanics",
+      "items": [
+        { "title": "Laines Commercial Auto Manual", "tooltip": "Intermediate Mechanics" },
+        { "title": "Laines Performance Auto Manual", "tooltip": "Advanced Mechanics" },
+        { "title": "Laines Standard Auto Manual", "tooltip": "Basic Mechanics" }
+      ]
+    },
+    {
+      "name": "Metalworking",
+      "class": "color-metalworking",
+      "items": [
+        { "title": "American Bladecraft", "tooltip": "Forge Meat Cleaver Blade, Forge Hunting Knife Blade, Forge Machete Blade, Forge Hatchet Head, Forge Wood Axe Head, Forge Axe Head, Forge Small Knife, Forge Large Knife Blade, Forge Fleshing Tool" },
+        { "title": "Blunt Forge", "tooltip": "Forge Claw Hammer Head, Forge Crowbar, Forge Sledgehammer Head, Forge Ball-peen Hammer Head, Forge Club Hammer Head, Forge Pick Axe Head" },
+        { "title": "Everyday Smithing - April 1993", "tooltip": "Forge Steel Sheet, Forge Small Steel Sheet, Make Metal Drum, Forge Saw, Forge Spade Head, Forge Gardening Trowel, Forge Gardening Hoe Head, Forge Hand Scythe Head, Forge Sheep Shears, Forge Scythe Head, Forge Saw" },
+        { "title": "Everyday Smithing - June 1993", "tooltip": "Forge Tongs, Forge Heading Tool, Forge Draw Plate, Forge 5 Nails, Forge Smithing Hammer Head, Forge Masonry Chisel, Forge Masonry Trowel, Forge Metalworking Chisel, Forge Metalworking Punch, Forge Metalworking Pliers, Forge Fireplace Poker, Make Improvised Whetstone, Forge File, Forge Drill" },
+        { "title": "Everyday Smithing - May 1993", "tooltip": "Forge Kitchen Tools, Forge Cooking Pot, Forge Roasting Pan, Forge Saucepan, Forge Baking Tray, Forge Baking Pan, Forge Frying Pan, Forge Bucket, Forge Corkscrew, Forge Kettle, Forge Goblets, Forge Cup" },
+        { "title": "Iron Age Metalworking", "tooltip": "Construct Charcoal Pit, Construct Primitive Forge, Construct Primitive Furnace" },
+        { "title": "Medieval Armory - June 1993", "tooltip": "Forge Crude Sword Blade, Forge Simple Shortsword Blade, Forge Sword Blade, Forge Shortsword Blade, Forge Spear Head, Forge Long Spear Head, Forge Handguard Dagger" },
+        { "title": "Medieval Armory - May 1993", "tooltip": "Forge Mace Head, Make Spiked Club, Make Spiked Baseball Bat, Make Spiked Cudgel, Forge Axe Head, Carve Short Bat" },
+        { "title": "Medieval Metalworking", "tooltip": "Construct Smelting Furnace, Construct Blast Furnace" },
+        { "title": "Modern Metalworking at Home", "tooltip": "Construct Charcoal Burner, Construct Forge, Construct Advanced Forge, Construct Makeshift Electric Blower Forge" },
+        { "title": "Small-Scale Smithing", "tooltip": "Forge Tweezers, Forge Forceps, Forge Scissors, Forge Doorknob, Forge Hinge, Forge Straight Razor, Forge 4 Fishing Hooks, Forge Needle, Forge Buckle" }
+      ]
+    },
+    {
+      "name": "Welding",
+      "class": "color-welding",
+      "items": [
+        { "title": "Welder Monthly - April 1993", "tooltip": "Metal Big Pole Fence Gate, Big Wire Fence Gate, Metal Wire Fence Gate, Big Double Pole Gate, Big Double Wire Gate, Metal Big Wire Fence, Metal Big Pole Fence, Metal Pole Fence Gate, Metal Pole Fence, Metal Fence, Metal Wire Fence" },
+        { "title": "Welder Monthly - June 1993", "tooltip": "Metal Wall (Basic), Metal Wall (Advanced), Metal Floor, Metal Window Frame, Metal Window Frame, Metal Wall Frame, Metal Door Frame, Metal Door Frame, Metal Stairs" },
+        { "title": "Welder Monthly - March 1993", "tooltip": "Make Metal Sheet, Cut 4 Small Metal Sheets" },
+        { "title": "Welder Monthly - May 1993", "tooltip": "Metal Counter, Metal Counter, Metal Counter Corner, Metal Counter Corner, Metal Crate, Metal Crate, Metal Big Locker, Metal Big Locker, Metal Small Locker, Metal Small Locker, Metal Shelves, Metal Shelves" }
+      ]
+    },
+    {
+      "name": "Tailoring",
+      "class": "color-tailoring",
+      "items": [
+        { "title": "Woolly Yarns - June 1993", "tooltip": "Knit Scarf, Knit Legwarmers, Knit Sweater Vest, Knit Socks, Knit Doily" },
+        { "title": "Woolly Yarns - May 1993", "tooltip": "Knit Wool Hat, Knit Open-Face Balaclava, Knit Full Balaclava, Knit Beanie" }
+      ]
+    },
+    {
+      "name": "Trapping",
+      "class": "color-trapping",
+      "items": [
+        { "title": "Small Game Hunting", "tooltip": "Make Snare Trap" },
+        { "title": "The Hunter", "tooltip": "Make Crate Trap, Make Stick Trap" },
+        { "title": "Wildlife Preserve", "tooltip": "Make Box Trap, Make Cage Trap" }
+      ]
+    },
+    {
+      "name": "Armor",
+      "class": "color-armor",
+      "items": [
+        { "title": "Armor in the Iron Age", "tooltip": "Forge Small Armor Plate, Assemble Forearm Armor, Forge Metal Body Armor, Assemble Metal Shoulder Armor, Assemble Metal Thigh Armor, Assemble Shin Armor, Forge Metal Mask, Forge Buckle" },
+        { "title": "Early Indigenous Armor - An In-Depth Study", "tooltip": "Make Bone Armor, Make Wood Armor" },
+        { "title": "European Armor in the Late Medieval Era", "tooltip": "Forge Small Armor Plate, Assemble Shoulder Armor, Assemble Articulated Metal Thigh Armor, Forge Codpiece, Forge Metal Neck Guard, Assemble Full Metal Forearm Armor, Assemble Articulated Metal Shin Armor, Forge Fingerless Metal Gloves, Forge Metal Helmet, Forge Coat of Plates Body Armor, Forge Buckle" },
+        { "title": "FBI Incident Report: San Fernando Bank Robbery", "tooltip": "Make Bulletproof Limb Armor" },
+        { "title": "Secrets of the Outback Outlaws", "tooltip": "Make Scrap Metal Helmet, Make Scrap Metal Body Armor, Make Scrap Metal Shoulder Armor, Make Scrap Metal Thigh Armor" },
+        { "title": "Strange Histories - Siberian Bear Hunting", "tooltip": "Spike Soft Armor, Weld Spikes On Metal Armor, Forge Spear Head, Forge Long Spear Head" },
+        { "title": "Outfit Apocalypse", "tooltip": "Make Tire Armor, Spike Soft Armor, Make Leather Codpiece, Make Leather Neck Guard" }
+      ]
+    },
+    {
+      "name": "Weapon",
+      "class": "color-weapon",
+      "items": [
+        { "title": "Bloody Japanese Wrestling Deathmatch!", "tooltip": "Barbed-Wire Wrap Weapon" },
+        { "title": "No Man's Land", "tooltip": "Can-Reinforce Weapon, Make Gas Mask Filter, Recharge Filters" },
+        { "title": "Revolting Peasants", "tooltip": "Make Garden Fork Head Weapon, Make Spade Head Cudgel, Railspike Weapon, Make Plank with Saw" },
+        { "title": "The Cheapskate's John Spiral - Escaping Captivity", "tooltip": "Copy Building Key, Make Improvised Screwdriver" },
+        { "title": "The Cheapskate's John Spiral - Prison Defense", "tooltip": "Make Shiv, Make Glass Shiv, Make Toothbrush Shiv, Make Magazine Armor" },
+        { "title": "The Cheapskate's John Spiral - Street Violence", "tooltip": "Make Rake-Head-Spiked Weapon, Make Sawblade Wooden Bat, Sheet Metal-Reinforce Weapon, Make Plank with Saw, Make Bucket Maul, Make Kettle Maul, Make Brake Disc Weapon" },
+        { "title": "The First Weapons", "tooltip": "Carve Bone War Hatchet Head, Make Jawbone Axe, Make Jawbone Club, Make Bone Club, Sharpen Bone, Sharpen Long Bone, Sharpen Jawbone, Bone Spike Weapon" },
+        { "title": "The Louisville Bruiser", "tooltip": "Carve Bat" }
+      ]
+    },
+    {
+      "name": "Primitive Tool",
+      "class": "color-primitivetool",
+      "items": [
+        { "title": "Pioneering Carvers", "tooltip": "Carve Bone Sewing Needle, Carve Bone Awl, Carve Knitting Needles, Carve Wooden Fork, Carve Bone Fork, Carve Wooden Spade, Carve Goblets, Carve Bucket" }
+      ]
+    },
+    {
+      "name": "Misc",
+      "class": "color-misc",
+      "items": [
+        { "title": "Real Spy Secrets - May 1993", "tooltip": "Hollow Out Book" }
+      ]
+    }
+  ],
+  "literature": {
+    "comics": [
+      { "name": "Comics Series", "class": "color-ComicSeries", "items": [
+        {"title": "100 Billion BC", "issues": 202}, {"title": "Absolute Hooey", "issues": 238}, {"title": "Atom Lizard Awakes Again!", "issues": 7}, {"title": "Atom Lizard Awakes!", "issues": 4}, {"title": "Atom Lizard Destroys Cities!", "issues": 10}, {"title": "Atom Lizard Far-Future Stories!", "issues": 13}, {"title": "Atom Lizard The Dragon King! - Medieval Mayhem", "issues": 13}, {"title": "Atomman - Miniature Mayhem", "issues": 270}, {"title": "Blast Force", "issues": 170}, {"title": "Blast Force Unleashed!", "issues": 60}, {"title": "Blindman's Bluff", "issues": 54}, {"title": "Bloody Axe of Karn the Slayer", "issues": 133}, {"title": "Brat Pen's House of Ideas", "issues": 514}, {"title": "Bravely Into Peril", "issues": 175}, {"title": "Bricklayer", "issues": 188}, {"title": "Bride of The Cactus", "issues": 14}, {"title": "Bruiser", "issues": 217}, {"title": "Bruisers!", "issues": 33}, {"title": "Cactus ETERNAL", "issues": 1}, {"title": "Captain Woof - Canine Pilot!", "issues": 363}, {"title": "Child Detective Tales", "issues": 318}, {"title": "Chuckle", "issues": 535}, {"title": "Commando Raid", "issues": 213}, {"title": "Corpsebound", "issues": 58}, {"title": "Crimes of the Century", "issues": 101}, {"title": "Crypt of Insanity", "issues": 136}, {"title": "Curse Ryder", "issues": 117}, {"title": "Damsels & Dangers", "issues": 73}, {"title": "Danger Horse", "issues": 12}, {"title": "Darkdrive the Sorcerer Car", "issues": 121}, {"title": "Death of the Nightporter", "issues": 1}, {"title": "Dense Alloy", "issues": 258}, {"title": "Dino Trapper", "issues": 194}, {"title": "Dino Trapper VS Atom Lizard!", "issues": 4}, {"title": "Dr. Ape - Science Vigilante", "issues": 359}, {"title": "Dr. Ape Battles Atom Lizard!", "issues": 3}, {"title": "Dr. Ape Jr. Gang Explores Space", "issues": 36}, {"title": "Dr. Werewolf", "issues": 147}, {"title": "Dr. Werewolf & Dr. Ape - Technology Hospital Showdown", "issues": 1}, {"title": "Dr. Werewolf - Full Moon!", "issues": 1}, {"title": "Dr. Werewolf Returns!", "issues": 27}, {"title": "Dracula Hunters", "issues": 43}, {"title": "Dracula Hunters Against Atom Lizard!", "issues": 1}, {"title": "Dracula Hunters vs Queen Vampire", "issues": 3}, {"title": "Drake Steele - Escape From Dracula", "issues": 4}, {"title": "Drake Steele - Escape From The Dracula Hunters", "issues": 3}, {"title": "Drake Steele - Vampire Detective", "issues": 169}, {"title": "Encounter Critical!", "issues": 18}, {"title": "Escape From Peril", "issues": 6}, {"title": "Fall of the Steelman", "issues": 1}, {"title": "Fantasies Of Power", "issues": 6}, {"title": "Farrago", "issues": 128}, {"title": "Faster Than Lightspeed", "issues": 38}, {"title": "Forbidden Experiments", "issues": 158}, {"title": "Franken-Lad", "issues": 54}, {"title": "Franken-Lad & Franken-Mutt", "issues": 12}, {"title": "Freedom Enforcers", "issues": 54}, {"title": "From Out of the Shrieking Mortuary", "issues": 383}, {"title": "Furious Five - Meltdown", "issues": 7}, {"title": "Furious Five and Scorpman", "issues": 51}, {"title": "Futurelords", "issues": 24}, {"title": "Gamma Radiation Child", "issues": 174}, {"title": "Ghost Kids", "issues": 429}, {"title": "Gladiator Adventures", "issues": 196}, {"title": "Gore Ride!", "issues": 33}, {"title": "Gorilla Trucker", "issues": 202}, {"title": "Gorilla Truckers", "issues": 85}, {"title": "Greasy Biker Stories", "issues": 316}, {"title": "Green Hawk", "issues": 295}, {"title": "Gross-Out!", "issues": 87}, {"title": "He-Frankenstein", "issues": 27}, {"title": "Heavy Water", "issues": 279}, {"title": "Hisayo-san - Death is Life", "issues": 59}, {"title": "History Unbelieved", "issues": 285}, {"title": "Holy Witch", "issues": 136}, {"title": "Horseshoecrab!", "issues": 18}, {"title": "Humanman", "issues": 79}, {"title": "Humanman Meets Humanwoman", "issues": 6}, {"title": "Humanwoman", "issues": 316}, {"title": "Iceblaze", "issues": 66}, {"title": "Icky Tales!", "issues": 217}, {"title": "Imbroglio", "issues": 62}, {"title": "Jackie Jaye - Truthseeker!", "issues": 4}, {"title": "John Spiral - Nuclear Kerfuffle", "issues": 4}, {"title": "John Spiral - Spy at Large", "issues": 159}, {"title": "John Spiral - Torpedo Tube Tales", "issues": 4}, {"title": "Jungle Adventure", "issues": 237}, {"title": "Karn The Defeater", "issues": 268}, {"title": "Karn The Savage - Sorcerer Slaying Special!", "issues": 7}, {"title": "Karn vs Merlin", "issues": 1}, {"title": "Karn! Relentless!", "issues": 54}, {"title": "Kazusa", "issues": 33}, {"title": "Kentucky Mutants!", "issues": 57}, {"title": "King Redwood", "issues": 145}, {"title": "King Redwood vs. Atom Lizard!", "issues": 1}, {"title": "Kit Sequoia Meets King Redwood", "issues": 5}, {"title": "Kit Sequoia's Two Fists", "issues": 185}, {"title": "Lasso Lady", "issues": 351}, {"title": "Lasso Lady - Fight to the Death", "issues": 13}, {"title": "Lasso Lady and Nightporter", "issues": 122}, {"title": "Lasso Lady and Steelman", "issues": 134}, {"title": "Lasso Lady vs. Cthulhu", "issues": 1}, {"title": "Maiden Canada", "issues": 236}, {"title": "Mayor Academy", "issues": 93}, {"title": "Metal Spear Quest", "issues": 109}, {"title": "Millipede Kid", "issues": 346}, {"title": "Monster Presidents", "issues": 8}, {"title": "Needleface", "issues": 42}, {"title": "Nightporter - Year Zero", "issues": 7}, {"title": "Nightporter 2020", "issues": 7}, {"title": "Nightporter Jr.", "issues": 17}, {"title": "Nightporter vs. Steelman", "issues": 4}, {"title": "Ninja! Attack!", "issues": 88}, {"title": "Oily Revenger", "issues": 132}, {"title": "Omega Department - Haunted Hargrave", "issues": 4}, {"title": "Omega Department - Mysterious Mantell", "issues": 4}, {"title": "P - Time Hunter", "issues": 34}, {"title": "PUTRID", "issues": 66}, {"title": "Peacedrivers", "issues": 26}, {"title": "Plasma Team", "issues": 17}, {"title": "Plasma Woman", "issues": 140}, {"title": "Pluto Man", "issues": 87}, {"title": "Professor Idiot", "issues": 385}, {"title": "Professor Idiot Bungles Again", "issues": 9}, {"title": "Queen Thunora of Lemuria", "issues": 100}, {"title": "Queen Vampire", "issues": 168}, {"title": "RIP Scorpman", "issues": 7}, {"title": "Reanimated Green Berets", "issues": 19}, {"title": "Return of the Nightporter", "issues": 4}, {"title": "Revenge of the Stockbroker", "issues": 1}, {"title": "Riko to!", "issues": 1}, {"title": "Robobattles", "issues": 39}, {"title": "Robot Unit", "issues": 218}, {"title": "Santa's Secret Adventures", "issues": 76}, {"title": "Saucer Sorcery", "issues": 1}, {"title": "Scorpman - Dangerville", "issues": 7}, {"title": "Scorpman - The Death of Dee Derry", "issues": 4}, {"title": "Scorpman and Blindman", "issues": 9}, {"title": "Scorpman and the Z-People", "issues": 24}, {"title": "She-Frankenstein", "issues": 302}, {"title": "She-Frankenstein & She-Neanderthal - Team Up!", "issues": 1}, {"title": "Shikoku Monogatari", "issues": 14}, {"title": "Shoggoths Attack", "issues": 1}, {"title": "Shoggoths Attack - The Final War", "issues": 7}, {"title": "Shoggoths Attack - The Shoggoth War", "issues": 4}, {"title": "Shonen", "issues": 154}, {"title": "Shooting Irons", "issues": 139}, {"title": "Sidekick Adventures", "issues": 86}, {"title": "Sidekick Avengers", "issues": 13}, {"title": "Sidekick Cemetery", "issues": 1}, {"title": "Solar Calculator", "issues": 47}, {"title": "Soldierman", "issues": 351}, {"title": "Space Warlock", "issues": 140}, {"title": "Star Avengers", "issues": 1}, {"title": "Steel-lady", "issues": 201}, {"title": "Steel-lady Goes to Mars", "issues": 21}, {"title": "Steelgranny Stories", "issues": 51}, {"title": "Steelman - Forged in Fire", "issues": 1}, {"title": "Steelman - The Impossible Sun", "issues": 13}, {"title": "Steelman Returns", "issues": 13}, {"title": "Steelman vs. Scorpman vs. The Nightporter", "issues": 4}, {"title": "Steelman vs. The Nightporter", "issues": 4}, {"title": "Steelwedding", "issues": 4}, {"title": "Stipulator vs. Terminatrix", "issues": 4}, {"title": "Swords & Fireballs", "issues": 84}, {"title": "Tales of Misfortune", "issues": 185}, {"title": "Tales of The Jewel Throne", "issues": 5}, {"title": "Tank-taur!", "issues": 26}, {"title": "Technology Hospital", "issues": 110}, {"title": "Teen Steelman", "issues": 83}, {"title": "Teen Surgeons", "issues": 159}, {"title": "Terminatrix VS Atom Lizard", "issues": 1}, {"title": "The Bee People", "issues": 1}, {"title": "The Cactus", "issues": 175}, {"title": "The Ceres Invasion", "issues": 9}, {"title": "The Churl!", "issues": 31}, {"title": "The Crimefighting Dogs", "issues": 176}, {"title": "The Crypt of Pain", "issues": 295}, {"title": "The Curtain", "issues": 33}, {"title": "The Darkest Nightporter", "issues": 1}, {"title": "The Flummoxer", "issues": 54}, {"title": "The Foreman!", "issues": 166}, {"title": "The Furious Five", "issues": 185}, {"title": "The Ghost Brawlers", "issues": 72}, {"title": "The Hyena", "issues": 47}, {"title": "The Impossible Steelman!", "issues": 399}, {"title": "The Incredible Scorpman", "issues": 207}, {"title": "The Leopard - Toothy Tales", "issues": 166}, {"title": "The Magic Hoodie", "issues": 1}, {"title": "The Moderators", "issues": 166}, {"title": "The Moderators - Beyond the Ice Palace", "issues": 4}, {"title": "The Moderators - Oldworld's New World", "issues": 13}, {"title": "The New Risque Adventures of Merlin", "issues": 22}, {"title": "The New Scorpman", "issues": 16}, {"title": "The Omega Department Archive", "issues": 79}, {"title": "The Pincushion", "issues": 214}, {"title": "The Scavenger", "issues": 151}, {"title": "The Seven Suns", "issues": 78}, {"title": "The Shortchanger", "issues": 38}, {"title": "The Spitfightin' Dames", "issues": 185}, {"title": "The Stipulator", "issues": 131}, {"title": "The Stockbroker - Dead Cat Bounce", "issues": 4}, {"title": "The Stockbroker - New Investments", "issues": 13}, {"title": "The Swordfighting Nurse", "issues": 55}, {"title": "The Terminatrix", "issues": 84}, {"title": "The Thompsons - Herb's New Car", "issues": 1}, {"title": "The Thompsons - Lester Gets In Trouble", "issues": 1}, {"title": "The Thompsons - Marie The Train Driver", "issues": 1}, {"title": "The Uncouth Squad", "issues": 41}, {"title": "The Warlockhammer Of Tanglewood", "issues": 34}, {"title": "Thrilling Dinosaur Stories", "issues": 205}, {"title": "Thunora The She-Neanderthal", "issues": 268}, {"title": "Toddler Police", "issues": 39}, {"title": "Toilet Humor", "issues": 215}, {"title": "True Hauntings", "issues": 158}, {"title": "True Mercenary", "issues": 194}, {"title": "True Ninja History", "issues": 46}, {"title": "Z-People", "issues": 217}, {"title": "Z-People - Out of Time", "issues": 7}, {"title": "Z-People - The Leopard", "issues": 4}, {"title": "Z-People At the North Pole", "issues": 7}, {"title": "Zoinks!", "issues": 316}, {"title": "Zoinks! - After Hours & Unabashed", "issues": 1}, {"title": "ÜMLÄÜT!", "issues": 139}
+      ]}
+    ],
+    "graphicNovels": {
+      "name": "Graphic Novels",
+      "colorMapping": { "Biography": "color-Biography", "Historical": "color-History", "Fantasy": "color-Fantasy", "Sci-Fi": "color-Sci-fi", "Horror": "color-Horror", "Adventure Non-Fiction": "color-Adventure-Non-Fiction", "Art": "color-Art", "Baseball": "color-Baseball", "Business": "color-Business", "Childs": "color-Childs", "Cinema": "color-Cinema", "Classic Fiction": "color-Classic-Fiction", "Classic Non-Fiction": "color-Classic-Non-Fiction", "Computer": "color-Computer", "Conspiracy": "color-Conspiracy", "Crime Fiction": "color-Crime-Fiction", "Diet": "color-Diet", "Farming": "color-Farming", "Fashion": "color-Fashion", "General Reference": "color-General-Reference", "Golf": "color-Golf", "Legal": "color-Legal", "Literary Fiction": "color-Literary-Fiction", "Medical": "color-Medical", "Military": "color-Military", "Military History": "color-Military-History", "Music": "color-Music", "Nature": "color-Nature", "Occult": "color-Occult", "Philosophy": "color-Philosophy", "Policing": "color-Policing", "Politics": "color-Politics", "Quackery": "color-Quackery", "Religion": "color-Religion", "Romance": "color-Romance", "Sad Non-Fiction": "color-Sad-Non-Fiction", "School Textbook": "color-School-Textbook", "Science": "color-Science", "Sports": "color-Sports", "Thriller": "color-Thriller", "Travel": "color-Travel", "Western": "color-Western" },
+      "items": [
+        {"title": "The Innocents Abroad", "detail": "by Mark Twain", "genre": "Classic Fiction"}, {"title": "101 Beautiful Outfit Ideas", "detail": "by Kirk Cleveland", "genre": "Fashion"}, {"title": "24 Experiments to Try at Home!", "detail": "by Dr. Armand Troutman", "genre": "Childs"}, {"title": "999 Daily Habits of Successful Businessmen", "detail": "by Alexis McCaffrey", "genre": "Business"}, {"title": "A Business Manifesto", "detail": "by Irene S. Clay", "genre": "Business"}, {"title": "A Close Reading of the Constitution", "detail": "by Shad Egan", "genre": "Legal"}, {"title": "A Farewell to Arms", "detail": "by Ernest Hemingway", "genre": "Classic Fiction"}, {"title": "A Grief Filled Heart", "detail": "by Joy Avarsarala", "genre": "Sad Non-Fiction"}, {"title": "A Military For the Modern Age", "detail": "by General John McGrew", "genre": "Biography"}, {"title": "A Quick Look at Time", "detail": "by Prof. Shannon Haas", "genre": "Science"}, {"title": "A Real History of American Witches", "detail": "by Elise Lutz", "genre": "Occult"}, {"title": "A Study in Scarlet", "detail": "by Arthur Conan Doyle", "genre": "Crime Fiction"}, {"title": "A Treatise of Human Nature", "detail": "by David Hume", "genre": "Philosophy"}, {"title": "A Vindication of the Rights of Woman", "detail": "by Mary Wollstonecraft", "genre": "Politics"}, {"title": "A Year in Marseilles", "detail": "by Josiah English", "genre": "Travel"}, {"title": "Adapting For Success", "detail": "by Rey Cooks", "genre": "Business"}, {"title": "Addiction and Substance Abuse", "detail": "by Laura Paloma", "genre": "Medical"}, {"title": "Administration for Managers", "detail": "by H. Jonah Hamilton", "genre": "Business"}, {"title": "Adventures of Huckleberry Finn", "detail": "by Mark Twain", "genre": "Classic Fiction"}, {"title": "African Invertebrates", "detail": "by Jung C. McClure", "genre": "Nature"}, {"title": "Agent Under Fire", "detail": "by Sir Hugo Klebb", "genre": "Thriller"}, {"title": "All About Numbers", "detail": "by Johanna Skidmore", "genre": "School Textbook"}, {"title": "Alva Richards: The Interviewer Interviewed", "detail": "by Alva Richards and Jacob Smith", "genre": "Biography"}, {"title": "America's Cutest Dogs", "detail": "by Jay Boxer", "genre": "Nature"}, {"title": "American Magick", "detail": "by Florine Coffey", "genre": "Occult"}, {"title": "American Sports Compendium 1991", "detail": "by Frederic Houle", "genre": "Sports"}, {"title": "American Sports Compendium 1992", "detail": "by Frederic Houle", "genre": "Sports"}, {"title": "An Economic Overview", "detail": "by Irene S. Clay", "genre": "Business"}, {"title": "An Essay Concerning Human Understanding", "detail": "by John Locke", "genre": "Philosophy"}, {"title": "Analysing Suspect Profiles", "detail": "by Lt. Harry Scallion", "genre": "Policing"}, {"title": "Analysis Policies: A Guide", "detail": "by Justina B. Cady", "genre": "Business"}, {"title": "Anarchism and Other Essays", "detail": "by Emma Goldman", "genre": "Classic Non-Fiction"}, {"title": "And A Yes From Me", "detail": "by Roger Triskel and Susan Bauman", "genre": "Cinema"}, {"title": "Anna Karenina", "detail": "by Leo Tolstoy", "genre": "Romance"}, {"title": "Anne of Green Gables", "detail": "by Lucy Maud Montgomery", "genre": "Classic Non-Fiction"}, {"title": "Around the World in Eighty Days", "detail": "by Jules Vernes", "genre": "Classic Fiction"}, {"title": "Art of the Nineteenth Century", "detail": "by Colby Solis", "genre": "Art"}, {"title": "Aspen Mountain", "detail": "by Sebastian Peters", "genre": "Literary Fiction"}, {"title": "Baphomet's Grimoire", "detail": "by Ulysses LaRoy", "genre": "Occult"}, {"title": "Battles in the Jungle", "detail": "by Henry Kent", "genre": "Military History"}, {"title": "Behind the Desk", "detail": "by Lynette Z. Toufexis", "genre": "Literary Fiction"}, {"title": "Behind the Headlines", "detail": "by Frank Hemingway", "genre": "Biography"}, {"title": "Bejeweled with Kisses", "detail": "by Gina Arevalo", "genre": "Romance"}, {"title": "Ben-Hur: A Tale of the Christ", "detail": "by Lew Wallace", "genre": "Religion"}, {"title": "Beyond Good and Evil", "detail": "by Friedrich Nietzsche", "genre": "Philosophy"}, {"title": "Bicycle", "detail": "My Cycle, by Martha Crowley", "genre": "Sports"}, {"title": "Big Government Meltdown", "detail": "by Maxine Arroyo", "genre": "Politics"}, {"title": "Big Movie Guide '92", "detail": "by Roger Triskel and Susan Bauman", "genre": "Cinema"}, {"title": "Big Movie Guide '93", "detail": "by Roger Triskel and Susan Bauman", "genre": "Cinema"}, {"title": "Bills and Laws", "detail": "by Marjory Mattson", "genre": "Legal"}, {"title": "Black Beauty", "detail": "by Anna Sewell", "genre": "Classic Fiction"}, {"title": "Blood or Glory", "detail": "by Dion Wiggins", "genre": "Military"}, {"title": "Bloody Noses, Broken Vows: The Hector Lopez Story", "detail": "by Maria Lopez", "genre": "Sports"}, {"title": "Bloody Redcoats: The Revolutionary War", "detail": "by Henry Kent", "genre": "Military History"}, {"title": "Blown Away by Brilliance: The Z Hurricanes", "detail": "by Boyd Chavis", "genre": "Baseball"}, {"title": "Brass Instruments for Beginners", "detail": "by Dirk Poole", "genre": "Music"}, {"title": "Breaking News", "detail": "by Jackie Jaye", "genre": "Biography"}, {"title": "British Premier League Soccer '91", "detail": "by Maxwell Lilly", "genre": "Sports"}, {"title": "British Premier League Soccer '92", "detail": "by Maxwell Lilly", "genre": "Sports"}, {"title": "Broken Jenkins", "detail": "by B. Lair-Algol", "genre": "Thriller"}, {"title": "Business Technology", "detail": "by Chris Barlow", "genre": "Business"}, {"title": "Candide", "detail": "by Voltaire", "genre": "Classic Fiction"}, {"title": "Capital", "detail": "by Karl Marx", "genre": "Politics"}, {"title": "Chevalier Croupier", "detail": "by Malinda Chapman", "genre": "Literary Fiction"}, {"title": "China Revisited", "detail": "by Eldon Kruse", "genre": "Travel"}, {"title": "Civil Rights and Discrimination", "detail": "by Benoit Grover", "genre": "Legal"}, {"title": "Classic Movies", "detail": "by Tricia Horowitz", "genre": "Cinema"}, {"title": "Clawmarks", "detail": "by Robin Scales", "genre": "Horror"}, {"title": "Coding, in French", "detail": "by R.J. Dron", "genre": "Computer"}, {"title": "Collapse of the Soviet Union", "detail": "by Carina Caro", "genre": "Military History"}, {"title": "Common Sense", "detail": "by Thomas Paine", "genre": "Classic Non-Fiction"}, {"title": "Complete Book of the 1988 Olympics", "detail": "by Weldon George", "genre": "Sports"}, {"title": "Complete Book of the 1992 Olympics", "detail": "by Weldon George", "genre": "Sports"}, {"title": "Complex Project Management", "detail": "by Justina B. Cady", "genre": "Business"}, {"title": "Confessions of a Tank Commander", "detail": "by Sgt. Earl Cole", "genre": "Military"}, {"title": "Constitution of Kentucky", "detail": "", "genre": "Classic Non-Fiction"}, {"title": "Contacting the Otherworld", "detail": "by Lena Willis", "genre": "Occult"}, {"title": "Cool Chemistry", "detail": "by Dr. Armand Troutman", "genre": "School Textbook"}, {"title": "Copyright Laws", "detail": "by Benoit Grover", "genre": "Legal"}, {"title": "Corruption on Pennsylvania Avenue", "detail": "by Sylvia Duncan", "genre": "Politics"}, {"title": "Corruption: Detection and Legalities", "detail": "by Laura Lemay", "genre": "Legal"}, {"title": "Counting the Clouds", "detail": "by Linnie Shipp", "genre": "Literary Fiction"}, {"title": "Crazy Swede's Baseball Companion", "detail": "by Swede Jenkins", "genre": "Baseball"}, {"title": "Creatures of the Amazon", "detail": "by Gayle Atkins", "genre": "Nature"}, {"title": "Crime and Punishment", "detail": "by Fyodor Dostoevsky", "genre": "Classic Fiction"}, {"title": "Criminal Behavior", "detail": "by Francine Dreyfuss", "genre": "Policing"}, {"title": "Critique of Pure Reason", "detail": "by Immanuel Kant", "genre": "Philosophy"}, {"title": "Cure", "detail": "by Franklin Presskew", "genre": "Literary Fiction"}, {"title": "Custodial Sentencing", "detail": "by Ted Oliva", "genre": "Legal"}, {"title": "Customer Centric Care", "detail": "by Lou Faust", "genre": "Business"}, {"title": "D-Day: In Their Words", "detail": "by Vickie Gibbes-Ingalls", "genre": "Military History"}, {"title": "Dad's Smile", "detail": "by Linh Ocampo", "genre": "Literary Fiction"}, {"title": "Dangerous Protocol", "detail": "by Albert Cant", "genre": "Thriller"}, {"title": "Dark Agent", "detail": "by Sir Hugo Klebb", "genre": "Thriller"}, {"title": "Daughters in Law", "detail": "by Alton Fountain", "genre": "Literary Fiction"}, {"title": "Democracy in America", "detail": "by Alexis de Tocqueville", "genre": "Classic Non-Fiction"}, {"title": "Diet and Lifestyles", "detail": "by Samantha J. Kelly", "genre": "Diet"}, {"title": "Discourse on Inequality", "detail": "by Jean-Jacques Rousseau", "genre": "Politics"}, {"title": "Divan-i Kebir", "detail": "by Rumi", "genre": "Classic Non-Fiction"}, {"title": "Dog Goblin: Chronicles", "detail": "by Robert Keller", "genre": "Horror"}, {"title": "Dog Goblin: Origins", "detail": "by Robert Keller", "genre": "Horror"}, {"title": "Dog Goblin: Vengeance", "detail": "by Robert Keller", "genre": "Horror"}, {"title": "Drawing Cute Critters", "detail": "by M. Siu-Chong", "genre": "Art"}, {"title": "Dying For Freedom", "detail": "by Morgan Henry", "genre": "School Textbook"}, {"title": "Early Birthday", "detail": "by Ruby Windsor", "genre": "Literary Fiction"}, {"title": "East and West: The Great Schism", "detail": "by Matthew Hogue", "genre": "Religion"}, {"title": "Einstein", "detail": "by Diana Britt", "genre": "Biography"}, {"title": "Election '92", "detail": "by Phil Hartup", "genre": "Politics"}, {"title": "Emma", "detail": "by Jane Austen", "genre": "Romance"}, {"title": "Encyclopedia Hibernia A-B", "detail": "", "genre": "General Reference"}, {"title": "Encyclopedia Hibernia C", "detail": "", "genre": "General Reference"}, {"title": "Encyclopedia Hibernia D-F", "detail": "", "genre": "General Reference"}, {"title": "Encyclopedia Hibernia G-J", "detail": "", "genre": "General Reference"}, {"title": "Encyclopedia Hibernia K-L", "detail": "", "genre": "General Reference"}, {"title": "Encyclopedia Hibernia M-N", "detail": "", "genre": "General Reference"}, {"title": "Encyclopedia Hibernia O-P", "detail": "", "genre": "General Reference"}, {"title": "Encyclopedia Hibernia Q-S", "detail": "", "genre": "General Reference"}, {"title": "Encyclopedia Hibernia T-Z", "detail": "", "genre": "General Reference"}, {"title": "End-of-Life Care", "detail": "by Dr. Ben Rivers M.D.", "genre": "Medical"}, {"title": "Ethnicity And Conflict", "detail": "", "genre": "Military History"}, {"title": "Every Country on Earth!", "detail": "by Marjorie Marx", "genre": "School Textbook"}, {"title": "Everything or Nothing", "detail": "by Sir Hugo Klebb", "genre": "Thriller"}, {"title": "Eyewitnesses: Dos and Don'ts", "detail": "by Captain Don Hough", "genre": "Policing"}, {"title": "Failures of Government", "detail": "by Herman Souza", "genre": "Politics"}, {"title": "Falling Down Everest", "detail": "by Emanuel Knoll", "genre": "Adventure Non-Fiction"}, {"title": "Falling Son", "detail": "by Alton Fountain", "genre": "Literary Fiction"}, {"title": "Far From the Madding Crowd", "detail": "by Thomas Hardy", "genre": "Classic Fiction"}, {"title": "Farm Price Guide '92", "detail": "by Enid E. Underhill", "genre": "Farming"}, {"title": "Farm Price Guide '93", "detail": "by Enid E. Underhill", "genre": "Farming"}, {"title": "Fashion Icons of the '60s", "detail": "by Lucius Wolfe-Joy", "genre": "Fashion"}, {"title": "Fashion Icons of the '70s", "detail": "by Lucius Wolfe-Joy", "genre": "Fashion"}, {"title": "Fashion Icons of the '80s", "detail": "by Lucius Wolfe-Joy", "genre": "Fashion"}, {"title": "Fear and Trembling", "detail": "by Søren Kierkegaard", "genre": "Philosophy"}, {"title": "Fifty Days Without Water", "detail": "by Bennie Santana", "genre": "Adventure Non-Fiction"}, {"title": "Final Days of the Third Reich", "detail": "by Carina Caro", "genre": "Military History"}, {"title": "Finding Brilliance: Lessons From Great Companies", "detail": "by Owen Archer Sr.", "genre": "Business"}, {"title": "Fingerprint", "detail": "by Chester Nathan Pannell", "genre": "Crime Fiction"}, {"title": "Flatearth: Quest for the Crown", "detail": "by G.A.A. Swain", "genre": "Fantasy"}, {"title": "Flatearth: The Prince's Rebellion", "detail": "by G.A.A. Swain", "genre": "Fantasy"}, {"title": "Flatearth: The Redlands", "detail": "by G.A.A. Swain", "genre": "Fantasy"}, {"title": "For the Last Time", "detail": "by Chadwick Schell", "genre": "Literary Fiction"}, {"title": "Forbidden Intention", "detail": "by Terry Ashe", "genre": "Literary Fiction"}, {"title": "Forgotten Pioneers", "detail": "by Leland Dickson", "genre": "School Textbook"}, {"title": "Frankenstein", "detail": "by Mary Shelley", "genre": "Horror"}, {"title": "From Inside the Portals", "detail": "by Josiah Fisk", "genre": "Fantasy"}, {"title": "Funding and Investment Principles", "detail": "by Justina B. Cady", "genre": "Business"}, {"title": "General Accountancy", "detail": "by H. Jonah Hamilton", "genre": "Business"}, {"title": "Genuine's Book of Global Records '88", "detail": "", "genre": "General Reference"}, {"title": "Genuine's Book of Global Records '89", "detail": "", "genre": "General Reference"}, {"title": "Genuine's Book of Global Records '90", "detail": "", "genre": "General Reference"}, {"title": "Genuine's Book of Global Records '91", "detail": "", "genre": "General Reference"}, {"title": "Genuine's Book of Global Records '92", "detail": "", "genre": "General Reference"}, {"title": "Georgia O'Keeffe: American Modernist", "detail": "by Selena Kozlowski", "genre": "Art"}, {"title": "Germany by Train", "detail": "by Hans N. Asko", "genre": "Travel"}, {"title": "God Smiled at Me", "detail": "by Cob Blonton", "genre": "Religion"}, {"title": "Good Interview Techniques", "detail": "by Lt. Harry Scallion", "genre": "Policing"}, {"title": "Goresbridge", "detail": "by Karrie Denny", "genre": "Fantasy"}, {"title": "Great Art of the Classical World", "detail": "by Colby Solis", "genre": "Art"}, {"title": "Great Art of the Middle East", "detail": "by Colby Solis", "genre": "Art"}, {"title": "Great Art of the Renaissance", "detail": "by Colby Solis", "genre": "Art"}, {"title": "Great Expectations", "detail": "by Charles Dickens", "genre": "Classic Fiction"}, {"title": "Great Industries and the Men Who Made Them", "detail": "by Elton Paquette", "genre": "Business"}, {"title": "Green Tea Cured My Soul", "detail": "by Jessie Carson", "genre": "Quackery"}, {"title": "Guitar for Beginners", "detail": "by Dirk Poole", "genre": "Music"}, {"title": "Heading for the Heat: From Rosewood Prison to Stardom", "detail": "by Old Billy Shanklin", "genre": "Biography"}, {"title": "Healing Hands: My Story", "detail": "by Randy Dupree-Johnson", "genre": "Quackery"}, {"title": "Heidi", "detail": "by Johanna Spyri", "genre": "Classic Fiction"}, {"title": "Helicopters and Artillery", "detail": "by Alton Dunlap", "genre": "Military"}, {"title": "High Rise Homicide", "detail": "by Mitch J. Brinson", "genre": "Crime Fiction"}, {"title": "History of Motor Racing", "detail": "by Valerie Yee", "genre": "Sports"}, {"title": "Hollywood Hairstyle Manual", "detail": "by Jay Flanagan", "genre": "Fashion"}, {"title": "Hollywood Makeup", "detail": "by Jay Flanagan", "genre": "Fashion"}, {"title": "Hostile Takeover", "detail": "by Terry Ashe", "genre": "Literary Fiction"}, {"title": "How Rock'n'Roll Took Over the World", "detail": "by Davis Gann", "genre": "Music"}, {"title": "How The Bojangles Were Made", "detail": "by Kirsten Wells", "genre": "Biography"}, {"title": "How The Railroads Shaped America", "detail": "by William Goodwin", "genre": "School Textbook"}, {"title": "How To Break Employees: Secrets of a Manager", "detail": "by Owen Archer Sr.", "genre": "Business"}, {"title": "How to Survive a Tiger Attack", "detail": "by Toya Beattie", "genre": "Adventure Non-Fiction"}, {"title": "How We Do It", "detail": "by Krystal Knox", "genre": "Literary Fiction"}, {"title": "Howling Woman: How Screaming Cured Me", "detail": "by Aubrey Broussard", "genre": "Quackery"}, {"title": "Humans: A History Of Selfishness", "detail": "by Dr. Pasquale Roden", "genre": "Science"}, {"title": "I Ching", "detail": "", "genre": "Classic Non-Fiction"}, {"title": "I Remember...", "detail": "by Trudy Royal", "genre": "Literary Fiction"}, {"title": "I Think I Know. Do You?", "detail": "by Edward Stack", "genre": "Occult"}, {"title": "I'm Not a Shecret Agent!", "detail": "by Shaun Moore", "genre": "Biography"}, {"title": "Illegal", "detail": "Unbowed, by Cynthia Isom", "genre": "Sad Non-Fiction"}, {"title": "Impossible Choice", "detail": "by Frances Parham", "genre": "Literary Fiction"}, {"title": "In the Act", "detail": "by Freddie Larson", "genre": "Crime Fiction"}, {"title": "Innovations in Technology", "detail": "by Lou Faust", "genre": "Business"}, {"title": "Insurance and Liability", "detail": "by Laura Lemay", "genre": "Legal"}, {"title": "Istanbul to Cairo", "detail": "by Alton Brogan", "genre": "Travel"}, {"title": "Italia '90 Companion Kentucky Football Annual 1992", "detail": "", "genre": "Sports"}, {"title": "Jackie O: In Her Words", "detail": "by Brianna Greenwood", "genre": "Biography"}, {"title": "Jane Eyre", "detail": "by Charlotte Bronte", "genre": "Classic Fiction"}, {"title": "JFK: From Harvard to Dallas", "detail": "by Wes John Sawyer", "genre": "Biography"}, {"title": "Just One Last Thing...", "detail": "by Philip Falk", "genre": "Crime Fiction"}, {"title": "Kentucky by Bicycle", "detail": "by Edward Birch", "genre": "Sports"}, {"title": "Kentucky State Baseball - 1990", "detail": "by Tommy Bouchard", "genre": "Baseball"}, {"title": "Kentucky State Baseball - 1991", "detail": "by Tommy Bouchard", "genre": "Baseball"}, {"title": "Kentucky State Baseball - 1992", "detail": "by Tommy Bouchard", "genre": "Baseball"}, {"title": "Know Your Rights", "detail": "by Shad Egan", "genre": "Legal"}, {"title": "Knox Heights Country Club Yearbook 1991", "detail": "", "genre": "Golf"}, {"title": "Knox Heights Country Club Yearbook 1992", "detail": "", "genre": "Golf"}, {"title": "Kubla Khan", "detail": "and Other Works, by Samuel Taylor Coleridge", "genre": "Classic Fiction"}, {"title": "Lasers and Light", "detail": "by Prof. Stacy Brantley", "genre": "Science"}, {"title": "LBJ: Texan Titan", "detail": "by Wes John Sawyer", "genre": "Biography"}, {"title": "Learning Baseball", "detail": "by Swede Jenkins", "genre": "Baseball"}, {"title": "Leaves of Grass", "detail": "by Walt Whitman", "genre": "Classic Fiction"}, {"title": "Legal Writing Guide", "detail": "by Ted Oliva", "genre": "Legal"}, {"title": "Legalities of Taxation", "detail": "by Laura Lemay", "genre": "Legal"}, {"title": "Legends of Formula X", "detail": "by Lawrence Whittaker", "genre": "Sports"}, {"title": "Leviathan", "detail": "by Thomas Hobbes", "genre": "Politics"}, {"title": "Life Among the Stars", "detail": "by Stephanie O'Donoghue", "genre": "Biography"}, {"title": "Life in the Middle", "detail": "by Rosita Gannon", "genre": "Literary Fiction"}, {"title": "Life in the Screeching Condors", "detail": "by Freeman Nunn", "genre": "Military"}, {"title": "Lipstick Done Right", "detail": "by Lamont Hopper", "genre": "Fashion"}, {"title": "Little Women", "detail": "by Louisa May Alcott", "genre": "Classic Fiction"}, {"title": "Lives of the Founding Fathers", "detail": "by Wes John Sawyer", "genre": "Biography"}, {"title": "Living Through the Depression", "detail": "by Cindy Magnuson", "genre": "Biography"}, {"title": "Locked From the Inside", "detail": "by Amber Stillman", "genre": "Crime Fiction"}, {"title": "Logistics: Where, How, and Why", "detail": "by Irene S. Clay", "genre": "Business"}, {"title": "Long Term Illness Management", "detail": "by Laura Paloma", "genre": "Medical"}, {"title": "Looking Backward: 2000-1887", "detail": "by Edward Bellamy", "genre": "Classic Fiction"}, {"title": "Los Angeles's Insane World of Music", "detail": "by Bennie Monaghan", "genre": "Music"}, {"title": "Lost at Sea: How I Lived", "detail": "by Angelo Schiller", "genre": "Adventure Non-Fiction"}, {"title": "Louisville in the Nineteenth Century", "detail": "by Sheree Farrington", "genre": "School Textbook"}, {"title": "Louisville Lights: Aliens", "detail": "or Mass Hysteria?, by Edward Stack", "genre": "Conspiracy"}, {"title": "Love", "detail": "at Last, by Gina Arevalo", "genre": "Romance"}, {"title": "Lovely Dogs", "detail": "by Dr. Penelope Schreiner", "genre": "Nature"}, {"title": "Magical Woodland: Boris the Badger!", "detail": "", "genre": "Childs"}, {"title": "Magical Woodland: Fluffyfoot the Rabbit!", "detail": "", "genre": "Childs"}, {"title": "Magical Woodland: Freddy the Fox!", "detail": "", "genre": "Childs"}, {"title": "Magical Woodland: Furbert the Squirrel!", "detail": "", "genre": "Childs"}, {"title": "Magical Woodland: Jacques the Beaver!", "detail": "", "genre": "Childs"}, {"title": "Magical Woodland: Moley the Mole!", "detail": "", "genre": "Childs"}, {"title": "Magical Woodland: Pancake the Hedgehog!", "detail": "", "genre": "Childs"}, {"title": "Magical Woodland: Spiffo the Raccoon!", "detail": "", "genre": "Childs"}, {"title": "Magick Rituals and Daemons", "detail": "by Lena Willis", "genre": "Occult"}, {"title": "Maintaining Morale", "detail": "by George Hitchcock", "genre": "Military"}, {"title": "Making Headlines", "detail": "by Lynette Z. Toufexis", "genre": "Literary Fiction"}, {"title": "Mammals of Europe", "detail": "by Jung C. McClure", "genre": "Nature"}, {"title": "Managing Expectations and Breaking Bad News", "detail": "by Dr. Olive Vanton M.D.", "genre": "Medical"}, {"title": "Marisa's Dilemma", "detail": "by Martha Good", "genre": "Literary Fiction"}, {"title": "Marrow of the Gods", "detail": "by Zella Chen", "genre": "Fantasy"}, {"title": "Math and Madness", "detail": "by Corina Fain", "genre": "Biography"}, {"title": "Meditations", "detail": "by Marcus Aurelius", "genre": "Philosophy"}, {"title": "Men's Hair Done Right", "detail": "by Lamont Hopper", "genre": "Fashion"}, {"title": "Mental Health Management", "detail": "by Samantha J. Kelly", "genre": "Medical"}, {"title": "Micah's Almanac 1990", "detail": "by Micah Ostrander", "genre": "Farming"}, {"title": "Micah's Almanac 1991", "detail": "by Micah Ostrander", "genre": "Farming"}, {"title": "Micah's Almanac 1992", "detail": "by Micah Ostrander", "genre": "Farming"}, {"title": "Middlemarch", "detail": "by George Eliot", "genre": "Classic Fiction"}, {"title": "Mine County Martins", "detail": "by Martha Good", "genre": "Literary Fiction"}, {"title": "Moby Dick", "detail": "by Herman Melville", "genre": "Classic Fiction"}, {"title": "Moo! Quack! Woof!", "detail": "by Luke Workman", "genre": "Childs"}, {"title": "Moon Madness: The Jerry Jones Story", "detail": "by Kirsten Wells", "genre": "Biography"}, {"title": "Music Revolution!", "detail": "by Hollis Bermudez", "genre": "Music"}, {"title": "Musical Poetry: Some Tips for Lyrics", "detail": "by Joseph Beauregard", "genre": "Music"}, {"title": "My First Atlas", "detail": "by Sheena Beach", "genre": "Childs"}, {"title": "My First Bicycle", "detail": "by Sheena Beach", "genre": "Childs"}, {"title": "My Special Baby", "detail": "by Josephine Fenton", "genre": "Childs"}, {"title": "My Sweet Boy", "detail": "by Joy Avarsarala", "genre": "Sad Non-Fiction"}, {"title": "National News", "detail": "by Lynette Z. Toufexis", "genre": "Literary Fiction"}, {"title": "Near Death: New Perspectives", "detail": "by Tamra T. Adamson", "genre": "Religion"}, {"title": "Necromancy: The True Art of Raising the Dead", "detail": "by Dennis Daly", "genre": "Occult"}, {"title": "Nesting", "detail": "by Keisha Ibarra", "genre": "Literary Fiction"}, {"title": "Neurology", "detail": "by Virginia Ripoli", "genre": "Medical"}, {"title": "New Atlantis", "detail": "by Francis Bacon", "genre": "Classic Fiction"}, {"title": "New Voyages to North America", "detail": "by Louis Armand", "genre": "Classic Non-Fiction"}, {"title": "Nice Cats", "detail": "by Dr. Penelope Schreiner", "genre": "Nature"}, {"title": "Nightfire", "detail": "by Sir Hugo Klebb", "genre": "Thriller"}, {"title": "Nixon and Watergate", "detail": "by Wes John Sawyer", "genre": "Biography"}, {"title": "Noon Showdown", "detail": "by Charlie Torres", "genre": "Western"}, {"title": "North v. South: The Civil War", "detail": "by Henry Kent", "genre": "Military History"}, {"title": "Office Efficiency", "detail": "by Benoit Grover", "genre": "Business"}, {"title": "Officer Mental Health Guide", "detail": "by Chief Kevin Byrne", "genre": "Policing"}, {"title": "Old Age and Senility", "detail": "by Dr. Olive Vanton M.D.", "genre": "Medical"}, {"title": "On the Origin of Species", "detail": "by Charles Darwin", "genre": "Classic Non-Fiction"}, {"title": "On Tour With Joe Johnson", "detail": "by Bennie Monaghan", "genre": "Music"}, {"title": "One Small Step: The Apollo Story", "detail": "by Geraldo Louis", "genre": "School Textbook"}, {"title": "OSCC Yearbook - 1991", "detail": "by Gus Zapata", "genre": "Sports"}, {"title": "OSCC Yearbook - 1992", "detail": "by Gus Zapata", "genre": "Sports"}, {"title": "Ozymandias", "detail": "and Other Poems, by Percy Shelley", "genre": "Classic Fiction"}, {"title": "Pathology of Common Viruses", "detail": "by Gareth and June Watt", "genre": "Medical"}, {"title": "Patient Care", "detail": "by Laura Paloma", "genre": "Medical"}, {"title": "Pediatrics", "detail": "by Dr. Ben Rivers M.D.", "genre": "Medical"}, {"title": "Pencil Drawing Guide", "detail": "by Cpt. B. Inky", "genre": "Art"}, {"title": "Photofit", "detail": "by Karrie Quintana", "genre": "Crime Fiction"}, {"title": "Piano for Beginners", "detail": "by Dirk Poole", "genre": "Music"}, {"title": "Plastic Surgery", "detail": "by Gareth and June Watt", "genre": "Medical"}, {"title": "Pleistocene Land", "detail": "by Terry Ashe", "genre": "Literary Fiction"}, {"title": "Poker Tips Straight from the Strip!", "detail": "by Karl Odom", "genre": "Sports"}, {"title": "Police Reforms", "detail": "by Mary Huffington", "genre": "Policing"}, {"title": "Policing Modern America", "detail": "by Lt. Harry Scallion", "genre": "Policing"}, {"title": "Politics", "detail": "by Aristotle", "genre": "Politics"}, {"title": "Pregnancy and Newborn Baby Guide", "detail": "by Samantha J. Kelly", "genre": "Medical"}, {"title": "Pride and Prejudice", "detail": "by Jane Austen", "genre": "Romance"}, {"title": "Principal Doctrines", "detail": "by Epicurus", "genre": "Philosophy"}, {"title": "Property Law: A Short Guide", "detail": "by Luther Crosby", "genre": "Legal"}, {"title": "Punching Above My Weight", "detail": "by Rudy Grady", "genre": "Sports"}, {"title": "Questionable Ethics: The Riverside Rangers Story", "detail": "by Boyd Chavis", "genre": "Baseball"}, {"title": "Railroaded", "detail": "by Charlie Torres", "genre": "Western"}, {"title": "Raps 'n' Rhymes", "detail": "by Ione Ma", "genre": "Music"}, {"title": "Reagan: Acting President", "detail": "by Wes John Sawyer", "genre": "Biography"}, {"title": "Red, White and Blown Up", "detail": "by Dion Wiggins", "genre": "Military"}, {"title": "Reporting Corruption", "detail": "by Captain Don Hough", "genre": "Policing"}, {"title": "Rhode Island Romance", "detail": "by Sammy Sommers", "genre": "Romance"}, {"title": "Rights of Man", "detail": "by Thomas Paine", "genre": "Classic Non-Fiction"}, {"title": "Rituals of Lucifer", "detail": "by Ulysses LaRoy", "genre": "Occult"}, {"title": "Route 66", "detail": "by Alton Brogan", "genre": "Travel"}, {"title": "Rudy Grady: The Louisville Legend", "detail": "by Elliott Benton", "genre": "Sports"}, {"title": "Samurai of Slaftop-X", "detail": "by Linnie Frost", "genre": "Fantasy"}, {"title": "Science?", "detail": "", "genre": "Science"}, {"title": "Scottish Trails", "detail": "by Alton Brogan", "genre": "Travel"}, {"title": "Searching for Evidence", "detail": "by Captain Don Hough", "genre": "Policing"}, {"title": "Secrets of Everyday Clothes", "detail": "by Karl Schilling", "genre": "Fashion"}, {"title": "Securing the Evidence", "detail": "by Mary Huffington", "genre": "Policing"}, {"title": "Seeing Through Stereotypes", "detail": "by Francine Dreyfuss", "genre": "Policing"}, {"title": "Select Bible Passages", "detail": "by Bishop Peter Watts", "genre": "Religion"}, {"title": "Self-Reliance", "detail": "and Other Essays, by Ralph Waldo Emerson", "genre": "Classic Non-Fiction"}, {"title": "Sense and Sensibility", "detail": "by Jane Austen", "genre": "Romance"}, {"title": "Sermon on the Mount", "detail": "by Barb McCormick", "genre": "Religion"}, {"title": "Seven Corporate Principles", "detail": "by Irene S. Clay", "genre": "Business"}, {"title": "Severed Wigs: The French Revolution", "detail": "by Henry Kent", "genre": "Military History"}, {"title": "Sexually Transmitted Diseases", "detail": "by Dr. Karl Mortner M.D.", "genre": "Medical"}, {"title": "Ships and Guns", "detail": "by Alton Dunlap", "genre": "Military"}, {"title": "Shipwrecks and Commentaries", "detail": "by Álvar Núñez Cabeza de Vaca", "genre": "Classic Non-Fiction"}, {"title": "Silas Marner", "detail": "by George Eliot", "genre": "Classic Fiction"}, {"title": "Sing Like the Pros", "detail": "by Deanne Baron", "genre": "Music"}, {"title": "Singing Through the Pain", "detail": "by Toni Williams", "genre": "Biography"}, {"title": "Slaves of Arnok: Dwarf Empire", "detail": "by T.Z. Adams", "genre": "Fantasy"}, {"title": "Small Blessings: Life in a Convent", "detail": "by Sr. Michelle Pruitt", "genre": "Religion"}, {"title": "Snow on the Mountain", "detail": "by Takashi Kawamoto", "genre": "Literary Fiction"}, {"title": "Spawnloot: Desolation", "detail": "by B. Aphington", "genre": "Horror"}, {"title": "Speak to the Angels", "detail": "by Lena Willis", "genre": "Occult"}, {"title": "Special Forces: The Sharp Edge of Freedom", "detail": "by Freeman Nunn", "genre": "Military History"}, {"title": "Spiders and Snakes", "detail": "by Gayle Atkins", "genre": "Nature"}, {"title": "Stalin: The Red Conqueror", "detail": "by Marianna Martins", "genre": "Biography"}, {"title": "Standing Up to Bullies", "detail": "by Edgar Sharma", "genre": "Childs"}, {"title": "State Law Guide", "detail": "by Luther Crosby", "genre": "Legal"}, {"title": "Stealth Aircraft: A History", "detail": "by Alton Dunlap", "genre": "Military"}, {"title": "Steamship Hurricane: An Inside Look", "detail": "by Maurice Ferraro", "genre": "Biography"}, {"title": "Stock Trading Tips From a Wall Street Millionaire", "detail": "by Denis Blank", "genre": "Business"}, {"title": "Stuck", "detail": "by Bridgette Parrott", "genre": "Literary Fiction"}, {"title": "Suits and Top Hats", "detail": "by Karl Schilling", "genre": "Fashion"}, {"title": "SWAT: A New Approach", "detail": "by Chief Kevin Byrne", "genre": "Policing"}, {"title": "Tanks and Planes", "detail": "by Alton Dunlap", "genre": "Military"}, {"title": "Tao Te Ching", "detail": "by Lao Tzu", "genre": "Philosophy"}, {"title": "Tea With Teddy", "detail": "by Dennis Daly", "genre": "Childs"}, {"title": "Teamaidens", "detail": "by Jerald Chester", "genre": "Fantasy"}, {"title": "Tech Genius: The Kirrus Story", "detail": "by Emma Gee", "genre": "Biography"}, {"title": "Tennessee Temptation", "detail": "by Sammy Sommers", "genre": "Romance"}, {"title": "Texas Turmoil", "detail": "by Sammy Sommers", "genre": "Romance"}, {"title": "The Adventures of Pinocchio", "detail": "by Carlo Collodi", "genre": "Classic Fiction"}, {"title": "The Adventures of Tom Sawyer", "detail": "by Mark Twain", "genre": "Classic Fiction"}, {"title": "The Adventures of Tooks Bear", "detail": "", "genre": "Childs"}, {"title": "The Age of Innocence", "detail": "by Edith Wharton", "genre": "Classic Fiction"}, {"title": "The American Crisis", "detail": "by Thomas Paine", "genre": "Classic Non-Fiction"}, {"title": "The Americas Before Columbus", "detail": "by Alana Mary Hairston", "genre": "School Textbook"}, {"title": "The Angels Aren't There", "detail": "by Heath R. L. Pellegrino", "genre": "Science"}, {"title": "The Anti-Federalist Papers", "detail": "", "genre": "Classic Non-Fiction"}, {"title": "The Art of War", "detail": "by Sun Tzu", "genre": "Classic Non-Fiction"}, {"title": "The Autobiography of Benjamin Franklin", "detail": "by Benjamin Franklin", "genre": "Classic Non-Fiction"}, {"title": "The Battle of the Somme", "detail": "by Vickie Gibbes-Ingalls", "genre": "Military History"}, {"title": "The Best Sports Teams of All Time", "detail": "by Hollie Falk", "genre": "Sports"}, {"title": "The Bible", "detail": "", "genre": "Religion"}, {"title": "The Big Book of Science", "detail": "by Dr. Armand Troutman", "genre": "School Textbook"}, {"title": "The Black Arts", "detail": "by Merrill Roy", "genre": "Occult"}, {"title": "The Blood", "detail": "by Dr. Karl Mortner M.D.", "genre": "Medical"}, {"title": "The Book of Healing", "detail": "by Avicenna", "genre": "Philosophy"}, {"title": "The Book of Ingenious Mechanical Devices", "detail": "by Ismail al-Jazari", "genre": "Classic Non-Fiction"}, {"title": "The Boy Band Handbook", "detail": "by Lu Crowe", "genre": "Music"}, {"title": "The Briefcase", "detail": "by Scot Oakes", "genre": "Thriller"}, {"title": "The Brits are Back", "detail": "by Bennie Monaghan", "genre": "Music"}, {"title": "The Brothers Karamazov", "detail": "by Fyodor Dostoevsky", "genre": "Classic Fiction"}, {"title": "The Call of the Wild", "detail": "by Jack London", "genre": "Classic Fiction"}, {"title": "The Car Crash That Changed My Life", "detail": "by Merlin Amos", "genre": "Sad Non-Fiction"}, {"title": "The Cask of Amontillado", "detail": "by Edgar Allan Poe", "genre": "Horror"}, {"title": "The Coming Political Crisis", "detail": "by Mathew Porterfield", "genre": "Politics"}, {"title": "The Count of Monte Cristo", "detail": "by Alexandre Dumas", "genre": "Classic Fiction"}, {"title": "The Curtain", "detail": "by Peter Escamilla", "genre": "Literary Fiction"}, {"title": "The Days Before Motorcars", "detail": "by Jenna Gough", "genre": "Biography"}, {"title": "The Dreaded Knock", "detail": "by Roma Harwood", "genre": "Literary Fiction"}, {"title": "The Eastern Front", "detail": "by Henry Kent", "genre": "Military History"}, {"title": "The Emerald Isle", "detail": "by Eldon Kruse", "genre": "Travel"}, {"title": "The Fall of the Roman Empire", "detail": "by Edward Gibbon", "genre": "Classic Non-Fiction"}, {"title": "The Federalist Papers", "detail": "", "genre": "Classic Non-Fiction"}, {"title": "The Folklore of Knox", "detail": "by Robert John Ellis", "genre": "Occult"}, {"title": "The Four Books", "detail": "by Confucius", "genre": "Philosophy"}, {"title": "The French Resistance", "detail": "by Vickie Gibbes-Ingalls", "genre": "Military History"}, {"title": "The Gods of Pegana", "detail": "by Lord Dunsany", "genre": "Fantasy"}, {"title": "The Great Gatsby", "detail": "by F. Scott Fitzgerald", "genre": "Classic Fiction"}, {"title": "The Haunting of the Derrin Hotel", "detail": "by Robin Scales", "genre": "Horror"}, {"title": "The History of Animation", "detail": "by Martin Green II", "genre": "Art"}, {"title": "The Hound of the Baskervilles", "detail": "by Arthur Conan Doyle", "genre": "Crime Fiction"}, {"title": "The Iliad", "detail": "by Homer", "genre": "Classic Fiction"}, {"title": "The Immune System", "detail": "by Virginia Ripoli", "genre": "Medical"}, {"title": "The Island of Dr. Moreau", "detail": "by H.G. Wells", "genre": "Classic Fiction"}, {"title": "The Isle of Pines", "detail": "by Henry Neville", "genre": "Classic Fiction"}, {"title": "The Land of Tuckedaway", "detail": "by Forrest Barkley", "genre": "Fantasy"}, {"title": "The Last Man", "detail": "by Mary Shelley", "genre": "Classic Fiction"}, {"title": "The Lazarus Gene", "detail": "by Heath R. L. Pellegrino", "genre": "Science"}, {"title": "The Little Black Dress", "detail": "by Alice Holloway", "genre": "Fashion"}, {"title": "The Magic Hoodie", "detail": "by D.F.L.T.", "genre": "Childs"}, {"title": "The Masque of the Red Death", "detail": "by Edgar Allan Poe", "genre": "Horror"}, {"title": "The Meccan Illuminations", "detail": "by Ibn Arabi", "genre": "Philosophy"}, {"title": "The Metamorphosis", "detail": "by Franz Kafka", "genre": "Classic Fiction"}, {"title": "The Monastic Life", "detail": "by Br. Geoffrey Neville", "genre": "Religion"}, {"title": "The Muqaddimah", "detail": "by Ibn Khaldun", "genre": "Philosophy"}, {"title": "The Murder of Roger Ackroyd", "detail": "by Agatha Christie", "genre": "Classic Fiction"}, {"title": "The Night in Question", "detail": "by Philip Falk", "genre": "Crime Fiction"}, {"title": "The Objection", "detail": "by Scot Oakes", "genre": "Thriller"}, {"title": "The Opening Argument", "detail": "by Scot Oakes", "genre": "Thriller"}, {"title": "The Picture of Dorian Grey", "detail": "by Oscar Wilde", "genre": "Classic Fiction"}, {"title": "The Power of Computers", "detail": "by Albert Phipps", "genre": "Computer"}, {"title": "The Prince", "detail": "by Niccolo Machiavelli", "genre": "Classic Non-Fiction"}, {"title": "The Prisoner of Chillon", "detail": "by Lord Byron", "genre": "Classic Fiction"}, {"title": "The Purple Cloud", "detail": "by M. P. Shiel", "genre": "Classic Fiction"}, {"title": "The Rain and the Footsteps", "detail": "by Chadwick Schell", "genre": "Literary Fiction"}, {"title": "The Raven and Other Poems", "detail": "by Edgar Allan Poe", "genre": "Horror"}, {"title": "The Republic", "detail": "by Plato", "genre": "Politics"}, {"title": "The Rime of the Ancient Mariner", "detail": "by Samuel Taylor Coleridge", "genre": "Classic Fiction"}, {"title": "The Satanist Commandments", "detail": "by Ulysses LaRoy", "genre": "Occult"}, {"title": "The Screams", "detail": "by Robin Scales", "genre": "Horror"}, {"title": "The Secret Garden", "detail": "by Frances Hodgson Burnett", "genre": "Classic Fiction"}, {"title": "The Settlement", "detail": "by Scot Oakes", "genre": "Thriller"}, {"title": "The Sign of the Four", "detail": "by Arthur Conan Doyle", "genre": "Crime Fiction"}, {"title": "The Social Contract", "detail": "by Jean-Jacques Rousseau", "genre": "Politics"}, {"title": "The Story of Oil", "detail": "by Alba Herrmann", "genre": "School Textbook"}, {"title": "The Sun Also Rises", "detail": "by Ernest Hemingway", "genre": "Classic Fiction"}, {"title": "The Supreme Court", "detail": "by Chung Fitch", "genre": "Legal"}, {"title": "The Tale of Peter Rabbit", "detail": "by Beatrix Potter", "genre": "Classic Fiction"}, {"title": "The Tampered Witness", "detail": "by Scot Oakes", "genre": "Thriller"}, {"title": "The Teeth of the Dead", "detail": "by Emanuel McGinnis", "genre": "Fantasy"}, {"title": "The Thursdoid Compendium", "detail": "by Will Porter", "genre": "Thriller"}, {"title": "The Time Machine", "detail": "by H.G. Wells", "genre": "Classic Fiction"}, {"title": "The Trial", "detail": "by Franz Kafka", "genre": "Classic Fiction"}, {"title": "The Virologist and Disease", "detail": "by Virginia Ripoli", "genre": "Medical"}, {"title": "The Vision of Tundale", "detail": "by Brother Marcus", "genre": "Classic Fiction"}, {"title": "The Wallet of Lorene Hilton", "detail": "by Alvin McCaffrey", "genre": "Literary Fiction"}, {"title": "The Wealth of Nations", "detail": "by Adam Smith", "genre": "Politics"}, {"title": "The Workers' Guide to Computers", "detail": "by Chris Barlow", "genre": "Business"}, {"title": "Thinking Away Severe Illness", "detail": "by Josephine Milburn", "genre": "Quackery"}, {"title": "Thoughts of the Dear Leader", "detail": "by C.S. Lemmon", "genre": "Fantasy"}, {"title": "Throwing Out the Towel", "detail": "by Joe King", "genre": "Sports"}, {"title": "Timbergap Manor", "detail": "by Takashi Kawamoto", "genre": "Literary Fiction"}, {"title": "Tired of Trouble", "detail": "by Jimmie Lopez", "genre": "Literary Fiction"}, {"title": "Tort Law", "detail": "by Ted Oliva", "genre": "Legal"}, {"title": "Tour de Me", "detail": "by Crispin Haversham", "genre": "Sports"}, {"title": "Transforming Economies", "detail": "by Rene Parnell", "genre": "Business"}, {"title": "Trapped in the Ice", "detail": "by Rusty Kane", "genre": "Adventure Non-Fiction"}, {"title": "Treasure Island", "detail": "by Robert Louis Stevenson", "genre": "Classic Fiction"}, {"title": "Turing: Bletchley's Genius", "detail": "by Twila Salcedo", "genre": "Biography"}, {"title": "Turn ONE Dollar Into ONE MILLION", "detail": "by Owen Archer Sr.", "genre": "Business"}, {"title": "Twenty Four Truths a Second", "detail": "by Roger Triskel", "genre": "Cinema"}, {"title": "Under the Helmet", "detail": "by Buford Pate", "genre": "Sports"}, {"title": "Under the Rug", "detail": "by Melody Sena", "genre": "Literary Fiction"}, {"title": "Up the Avenue", "detail": "by Sylvia Usher", "genre": "Literary Fiction"}, {"title": "Vanity Fair", "detail": "by William Makepeace Thackeray", "genre": "Classic Fiction"}, {"title": "Vinseg, the Angel Slayer", "detail": "by Zella Chen", "genre": "Fantasy"}, {"title": "Walden", "detail": "by Henry David Thoreau", "genre": "Classic Fiction"}, {"title": "Wanted for Questioning", "detail": "by Celina Constanzo", "genre": "Crime Fiction"}, {"title": "War and Peace", "detail": "by Leo Tolstoy", "genre": "Classic Fiction"}, {"title": "War in the West", "detail": "by Henry Kent", "genre": "Military History"}, {"title": "We Will Fight Them: The Life of Churchill", "detail": "by Jay Warden", "genre": "Biography"}, {"title": "Wear Your Safety Belt", "detail": "by Scott Donaldson", "genre": "Sad Non-Fiction"}, {"title": "Wearing Thin", "detail": "by Tina Bowie", "genre": "Literary Fiction"}, {"title": "What Rainbows Are Made Of", "detail": "by Dennis Daly", "genre": "School Textbook"}, {"title": "What We Do", "detail": "by Krystal Knox", "genre": "Literary Fiction"}, {"title": "When We Dead Awaken", "detail": "by Henrik Ibsen", "genre": "Classic Fiction"}, {"title": "Where Do Babies Come From?", "detail": "by Jenna Chong", "genre": "School Textbook"}, {"title": "Whisper on the Breeze", "detail": "by Bettie Stevenson", "genre": "Literary Fiction"}, {"title": "Why Can't Trees Talk?", "detail": "by Jenna Chong", "genre": "Childs"}, {"title": "Why did God let it happen?", "detail": "by Clark Finn", "genre": "Religion"}, {"title": "Why Don't The Oceans Dry Up?", "detail": "by Jenna Chong", "genre": "Childs"}, {"title": "Why is the Sky So Big?", "detail": "by Jenna Chong", "genre": "Childs"}, {"title": "Wigs... And More!", "detail": "by Lauren Valentine", "genre": "Classic Fiction"}, {"title": "With Love and Kisses", "detail": "by Gina Arevalo", "genre": "Romance"}, {"title": "Woman in the Nineteenth Century", "detail": "by Margaret Fuller", "genre": "Politics"}, {"title": "Worker Health: Mental and Physical", "detail": "by H. Jonah Hamilton", "genre": "Business"}, {"title": "World Cup Fever! A Preview of USA '94", "detail": "by Sam Wenzel", "genre": "Sports"}, {"title": "Wuthering Heights", "detail": "by Emily Bronte", "genre": "Classic Fiction"}, {"title": "WWC: Greatest Wrestlers of All Time", "detail": "by Chauncey Lozano", "genre": "Sports"}, {"title": "XYZ's!", "detail": "by Abe E. Seez", "genre": "Childs"}, {"title": "Yontel the Swordsman", "detail": "by Clay Olivas", "genre": "Fantasy"}, {"title": "Z Hurricanes: What They Don't Want You to Know", "detail": "by Timothy Ludwig", "genre": "Baseball"}
+      ]
+    },
+    "literaryMagazines": {
+      "name": "Literary Magazines",
+      "colorMapping": {
+        "Art": "color-Mag-Art", "Business": "color-Mag-Business", "Car": "color-Mag-Car", "Child": "color-Mag-Child", "Cinema": "color-Mag-Cinema", "Crime": "color-Mag-Crime", "Fashion": "color-Mag-Fashion", "Firearm": "color-Mag-Firearm", "Gaming": "color-Mag-Gaming", "Golf": "color-Mag-Golf", "Health": "color-Mag-Health", "Hobby": "color-Mag-Hobby", "Horror": "color-Mag-Horror", "Humor": "color-Mag-Humor", "Military": "color-Mag-Military", "Music": "color-Mag-Music", "Outdoors": "color-Mag-Outdoors", "Police": "color-Mag-Police", "Popular": "color-Mag-Popular", "Rich": "color-Mag-Rich", "Science": "color-Mag-Science", "Sports": "color-Mag-Sports", "Tech": "color-Mag-Tech", "Teens": "color-Mag-Teens", "Uncategorized": "color-Mag-Uncategorized"
+      },
+      "items": [
+        { "title": "Air and Space News", "detail": "1950", "genre": "Military" },
+        { "title": "Alt + F4", "detail": "1988", "genre": "Tech" },
+        { "title": "American Cyclist", "detail": "1892", "genre": "Sports" },
+        { "title": "American Hobbies", "detail": "1902", "genre": "Hobby" },
+        { "title": "American Poet", "detail": "1905", "genre": "Uncategorized" },
+        { "title": "Andborg", "detail": "1935", "genre": "Science" },
+        { "title": "ArtAmerica", "detail": "1926", "genre": "Art" },
+        { "title": "Au Naturel", "detail": "1904", "genre": "Outdoors" },
+        { "title": "Automobiles Monthly", "detail": "1927", "genre": "Car" },
+        { "title": "Backroad", "detail": "1922", "genre": "Outdoors" },
+        { "title": "Bassline", "detail": "1954", "genre": "Music" },
+        { "title": "Beauty", "detail": "1967", "genre": "Fashion" },
+        { "title": "Belief", "detail": "1982", "genre": "Uncategorized" },
+        { "title": "Big Biceps", "detail": "1984", "genre": "Health" },
+        { "title": "Blocko Magazine", "detail": "1987", "genre": "Child" },
+        { "title": "Blues 'n' Jazz", "detail": "1922", "genre": "Music" },
+        { "title": "Boink!", "detail": "1925", "genre": "Humor" },
+        { "title": "Brash!", "detail": "1978", "genre": "Fashion" },
+        { "title": "Brief", "detail": "1928", "genre": "Uncategorized" },
+        { "title": "Cabin Fever", "detail": "1973", "genre": "Outdoors" },
+        { "title": "Card Games", "detail": "1908", "genre": "Hobby" },
+        { "title": "Charm!", "detail": "1961", "genre": "Fashion" },
+        { "title": "Checkmate", "detail": "1966", "genre": "Hobby" },
+        { "title": "Christians Together", "detail": "1870", "genre": "Uncategorized" },
+        { "title": "Cigars & Caviar", "detail": "1921", "genre": "Rich" },
+        { "title": "Classic Battles", "detail": "1944", "genre": "Military" },
+        { "title": "CodeWorld", "detail": "1979", "genre": "Tech" },
+        { "title": "Collecting", "detail": "1921", "genre": "Hobby" },
+        { "title": "Compressed Books", "detail": "1922", "genre": "Popular" },
+        { "title": "Congress Watcher", "detail": "1972", "genre": "Uncategorized" },
+        { "title": "Custodial Operator", "detail": "1992", "genre": "Police" },
+        { "title": "Dark Tales", "detail": "1923", "genre": "Horror" },
+        { "title": "Digital Adventure Power", "detail": "1983", "genre": "Tech" },
+        { "title": "Drag Kings", "detail": "1978", "genre": "Car" },
+        { "title": "Economy", "detail": "1971", "genre": "Business" },
+        { "title": "Electron", "detail": "1960", "genre": "Science" },
+        { "title": "Elegant", "detail": "1954", "genre": "Fashion" },
+        { "title": "Elegant Girl", "detail": "1960", "genre": "Teens" },
+        { "title": "Everyday Motorist", "detail": "1949", "genre": "Car" },
+        { "title": "Executive Lounge", "detail": "1957", "genre": "Rich" },
+        { "title": "Extinguish!", "detail": "1991", "genre": "Uncategorized" },
+        { "title": "Family Caring", "detail": "1990", "genre": "Uncategorized" },
+        { "title": "Figary", "detail": "1990", "genre": "Humor" },
+        { "title": "Fine Wine Connoisseur", "detail": "1989", "genre": "Rich" },
+        { "title": "Fine!", "detail": "1969", "genre": "Uncategorized" },
+        { "title": "Fire Safety News", "detail": "1981", "genre": "Police" },
+        { "title": "Flying Saucer Journal", "detail": "1947", "genre": "Horror" },
+        { "title": "Football Frenzy", "detail": "1983", "genre": "Sports" },
+        { "title": "Forces", "detail": "1968", "genre": "Uncategorized" },
+        { "title": "Fore!", "detail": "1982", "genre": "Golf" },
+        { "title": "Forever Living", "detail": "1989", "genre": "Health" },
+        { "title": "Fowl Intentions", "detail": "1958", "genre": "Outdoors" },
+        { "title": "Freewheelin'", "detail": "1986", "genre": "Sports" },
+        { "title": "Future Paleontology", "detail": "1987", "genre": "Science" },
+        { "title": "GameZ", "detail": "1989", "genre": "Gaming" },
+        { "title": "Ghostly Hauntings", "detail": "1991", "genre": "Horror" },
+        { "title": "Greens", "detail": "1987", "genre": "Golf" },
+        { "title": "Gruesome Crime Scenes", "detail": "1931", "genre": "Crime" },
+        { "title": "Hey Sir!", "detail": "1990", "genre": "Uncategorized" },
+        { "title": "High Flyer", "detail": "1942", "genre": "Rich" },
+        { "title": "Hiking Footwear", "detail": "1987", "genre": "Outdoors" },
+        { "title": "Hollywood News", "detail": "1962", "genre": "Cinema" },
+        { "title": "Home Run", "detail": "1955", "genre": "Sports" },
+        { "title": "Hospital Technology", "detail": "1982", "genre": "Tech" },
+        { "title": "Household Finance", "detail": "1986", "genre": "Uncategorized" },
+        { "title": "Improve Your House", "detail": "1980", "genre": "Popular" },
+        { "title": "In Focus", "detail": "1971", "genre": "Art" },
+        { "title": "Incredible Heroes", "detail": "1911", "genre": "Military" },
+        { "title": "Inquire", "detail": "1933", "genre": "Popular" },
+        { "title": "Jokes & Jokes", "detail": "1967", "genre": "Humor" },
+        { "title": "Jump", "detail": "1979", "genre": "Teens" },
+        { "title": "Kentucky Driver", "detail": "1933", "genre": "Car" },
+        { "title": "Kentucky Horse Racing", "detail": "1899", "genre": "Sports" },
+        { "title": "Kentucky Liberal", "detail": "1940", "genre": "Uncategorized" },
+        { "title": "Kentucky Observer", "detail": "1959", "genre": "Popular" },
+        { "title": "Kims Tanks and Armor Monthly", "detail": "1956", "genre": "Military" },
+        { "title": "Kirrus Computing", "detail": "1990", "genre": "Tech" },
+        { "title": "Kool Kids", "detail": "1989", "genre": "Child" },
+        { "title": "Labyrinths", "detail": "1991", "genre": "Gaming" },
+        { "title": "Latest Forensics", "detail": "1992", "genre": "Crime" },
+        { "title": "Lifestyle", "detail": "1990", "genre": "Popular" },
+        { "title": "Louisville Business Review", "detail": "1919", "genre": "Business" },
+        { "title": "Louisville Laughter", "detail": "1939", "genre": "Humor" },
+        { "title": "Majestic Big Game", "detail": "1923", "genre": "Outdoors" },
+        { "title": "Malpractice Insurance Monthly", "detail": "1990", "genre": "Rich" },
+        { "title": "Man's Health", "detail": "1986", "genre": "Health" },
+        { "title": "Markets Monthly", "detail": "1958", "genre": "Business" },
+        { "title": "Me", "detail": "1989", "genre": "Uncategorized" },
+        { "title": "Merc!", "detail": "1984", "genre": "Military" },
+        { "title": "Modern Dance", "detail": "1990", "genre": "Art" },
+        { "title": "Modern Trains", "detail": "1925", "genre": "Uncategorized" },
+        { "title": "Monstrous Trucks!", "detail": "1975", "genre": "Car" },
+        { "title": "Mossy Rock", "detail": "1967", "genre": "Music" },
+        { "title": "Motorcycle Enthusiast", "detail": "1950", "genre": "Car" },
+        { "title": "Movies Monthly", "detail": "1934", "genre": "Cinema" },
+        { "title": "National Celebs", "detail": "1948", "genre": "Popular" },
+        { "title": "Nature Facts", "detail": "1930", "genre": "Child" },
+        { "title": "Newsday", "detail": "1989", "genre": "Popular" },
+        { "title": "Newton", "detail": "1956", "genre": "Science" },
+        { "title": "Numisatics", "detail": "1967", "genre": "Uncategorized" },
+        { "title": "OSCC Insider", "detail": "1951", "genre": "Car" },
+        { "title": "Old West Life", "detail": "1911", "genre": "Uncategorized" },
+        { "title": "Open Mind", "detail": "1953", "genre": "Science" },
+        { "title": "Pale Gnome", "detail": "1990", "genre": "Gaming" },
+        { "title": "Parentage", "detail": "1989", "genre": "Uncategorized" },
+        { "title": "Paws", "detail": "1988", "genre": "Child" },
+        { "title": "Philately Lately", "detail": "1990", "genre": "Uncategorized" },
+        { "title": "Photospread", "detail": "1986", "genre": "Art" },
+        { "title": "Piledriver!", "detail": "1989", "genre": "Sports" },
+        { "title": "Police Files", "detail": "1940", "genre": "Crime" },
+        { "title": "Proletariat", "detail": "1917", "genre": "Uncategorized" },
+        { "title": "Readings Monthly", "detail": "1920", "genre": "Popular" },
+        { "title": "Real Estate Investment", "detail": "1982", "genre": "Business" },
+        { "title": "Reeling-in and Gear", "detail": "1979", "genre": "Outdoors" },
+        { "title": "Revelations", "detail": "1970", "genre": "Uncategorized" },
+        { "title": "Rock Out", "detail": "1980", "genre": "Music" },
+        { "title": "Running 'n' Gunning", "detail": "1978", "genre": "Firearm" },
+        { "title": "Running Life", "detail": "1986", "genre": "Health" },
+        { "title": "Scoped", "detail": "1977", "genre": "Firearm" },
+        { "title": "Screen Shriek!", "detail": "1963", "genre": "Horror" },
+        { "title": "Second Amendment", "detail": "1990", "genre": "Firearm" },
+        { "title": "Shorts Illustrated", "detail": "1954", "genre": "Fashion" },
+        { "title": "Silver Screen", "detail": "1937", "genre": "Cinema" },
+        { "title": "Sixteen", "detail": "1944", "genre": "Teens" },
+        { "title": "Skeptical", "detail": "1976", "genre": "Science" },
+        { "title": "Song and Dance", "detail": "1921", "genre": "Music" },
+        { "title": "Sorbe's", "detail": "1916", "genre": "Business" },
+        { "title": "Southern Literary Review", "detail": "1911", "genre": "Uncategorized" },
+        { "title": "Sports Stats", "detail": "1900", "genre": "Sports" },
+        { "title": "Sprinter", "detail": "1986", "genre": "Health" },
+        { "title": "St. Patrick's Journal", "detail": "1903", "genre": "Uncategorized" },
+        { "title": "Stand Your Ground", "detail": "1988", "genre": "Firearm" },
+        { "title": "Stock Trends", "detail": "1983", "genre": "Business" },
+        { "title": "Style", "detail": "1957", "genre": "Fashion" },
+        { "title": "Style - Life", "detail": "1963", "genre": "Uncategorized" },
+        { "title": "Suspects and Witnesses", "detail": "1929", "genre": "Police" },
+        { "title": "T-Power", "detail": "1985", "genre": "Golf" },
+        { "title": "TTRPG!", "detail": "1987", "genre": "Gaming" },
+        { "title": "Take a Life!", "detail": "1990", "genre": "Crime" },
+        { "title": "Telltale", "detail": "1989", "genre": "Popular" },
+        { "title": "The Biclops", "detail": "1984", "genre": "Gaming" },
+        { "title": "The Big Apple", "detail": "1925", "genre": "Uncategorized" },
+        { "title": "The Foreign Review", "detail": "1914", "genre": "Uncategorized" },
+        { "title": "The Nationalist", "detail": "1955", "genre": "Uncategorized" },
+        { "title": "The Wall Street Post", "detail": "1923", "genre": "Business" },
+        { "title": "The World Wars", "detail": "1948", "genre": "Military" },
+        { "title": "Thresher", "detail": "1966", "genre": "Sports" },
+        { "title": "Today's Builder", "detail": "1979", "genre": "Uncategorized" },
+        { "title": "Trailbeaters", "detail": "1972", "genre": "Outdoors" },
+        { "title": "Trucking Heaven", "detail": "1975", "genre": "Car" },
+        { "title": "True Crime Stories", "detail": "1954", "genre": "Crime" },
+        { "title": "True Serial Killings", "detail": "1970", "genre": "Crime" },
+        { "title": "Twitching Monthly", "detail": "1944", "genre": "Hobby" },
+        { "title": "Unpopular Electronics", "detail": "1954", "genre": "Tech" },
+        { "title": "Unsold Stories", "detail": "1989", "genre": "Uncategorized" },
+        { "title": "Up to Eleven", "detail": "1988", "genre": "Music" },
+        { "title": "Upper Crust", "detail": "1987", "genre": "Rich" },
+        { "title": "VHS Enthusiast", "detail": "1988", "genre": "Cinema" },
+        { "title": "Veteran", "detail": "1970", "genre": "Military" },
+        { "title": "VitimaniaRx", "detail": "1966", "genre": "Health" },
+        { "title": "WWC Insider", "detail": "1987", "genre": "Sports" },
+        { "title": "Watercraft and Bikes", "detail": "1984", "genre": "Car" },
+        { "title": "World Geograph", "detail": "1888", "genre": "Popular" },
+        { "title": "World Music", "detail": "1909", "genre": "Music" },
+        { "title": "World Trade", "detail": "1920", "genre": "Business" },
+        { "title": "Y", "detail": "1990", "genre": "Popular" },
+        { "title": "Your Investment Guide", "detail": "1986", "genre": "Business" }
+      ]
+    }
+  },
+  "tvSchedule": {
+    "title": "Life & Living TV Schedule",
+    "mainClass": "color-lifeAndLive",
+    "skillColors": {
+      "cooking": "bg-success",
+      "carpentry": "bg-warning text-dark",
+      "fishing": "bg-info text-dark",
+      "farming": "bg-success",
+      "foraging": "bg-secondary",
+      "trapping": "bg-dark",
+      "campfire recipe (no exp)": "bg-danger"
+    },
+    "dayColors": ["color-peach", "color-lavender", "color-mint", "color-sand", "color-sky", "color-rose", "color-stone", "color-amber", "color-lime"],
+    "days": [
+      { "date": "07/09 - Day 1", "episodes": [ {"time": "9:00 AM", "topic": "Cooking"}, {"time": "12:00 PM", "topic": "Carpentry"}, {"time": "6:00 PM", "topic": "Fishing"} ] },
+      { "date": "07/10 - Day 2", "episodes": [ {"time": "6:00 AM", "topic": "Cooking"}, {"time": "12:00 PM", "topic": "Carpentry"}, {"time": "6:00 PM", "topic": "Farming"} ] },
+      { "date": "07/11 - Day 3", "episodes": [ {"time": "6:00 AM", "topic": "Cooking"}, {"time": "12:00 PM", "topic": "Carpentry"}, {"time": "6:00 PM", "topic": "Fishing"} ] },
+      { "date": "07/12 - Day 4", "episodes": [ {"time": "6:00 AM", "topic": "Cooking"}, {"time": "12:00 PM", "topic": "Carpentry"}, {"time": "6:00 PM", "topic": "Campfire Recipe (No Exp)"} ] },
+      { "date": "07/13 - Day 5", "episodes": [ {"time": "6:00 AM", "topic": "Cooking"}, {"time": "12:00 PM", "topic": "Carpentry"}, {"time": "6:00 PM", "topic": "Foraging"} ] },
+      { "date": "07/14 - Day 6", "episodes": [ {"time": "6:00 AM", "topic": "Cooking"}, {"time": "12:00 PM", "topic": "Carpentry"}, {"time": "6:00 PM", "topic": "Trapping"} ] },
+      { "date": "07/15 - Day 7", "episodes": [ {"time": "6:00 AM", "topic": "Cooking"}, {"time": "12:00 PM", "topic": "Carpentry"}, {"time": "6:00 PM", "topic": "Foraging"} ] },
+      { "date": "07/16 - Day 8", "episodes": [ {"time": "6:00 AM", "topic": "Cooking"}, {"time": "6:00 PM", "topic": "Carpentry"} ] },
+      { "date": "07/17 - Day 9", "episodes": [ {"time": "6:00 AM", "topic": "Cooking"} ] }
+    ]
+  },
+  "cds": [
+    { "name": "Audio Books", "class": "color-foraging", "items": [
+      { "title": "Bartleby, the Scrivener - Audio Book", "tooltip": "by Herman Melville \nA tale of the man who would prefer not to." },
+      { "title": "Collected Yeats - Audio Book", "tooltip": " by W.B. Yeats \nThe collected works of the celebrated poet W.B. Yeats." },
+      { "title": "Jane Eyre - Audio Book", "tooltip": " by Charlotte Bronte \nOne of the most famous romance novels of all time. Jane Eyre arrives at Thornfield Hall and falls in love with the brooding Mr. Rochester." },
+      { "title": "Pride and Prejudice - Audio Book", "tooltip": "by Jane Austen \nJane Austen's beloved novel of manners concerning the life of Elizabeth Bennet and her romance with Mr. Fitzwilliam Darcy during the Regency Era." },
+      { "title": "Robinson Crusoe - Audio Book", "tooltip": "by Daniel Defoe \nThe classic tale of a man stranded far from home, learning to survive." },
+      { "title": "The Metamorphosis - Audio Book", "tooltip": " by Franz Kafka \nThe story of salesman Gregor Samsa, who wakes one morning to find himself inexplicably transformed into a huge insect." },
+      { "title": "Walden; or, Life in the Woods - Audio Book", "tooltip": " by Henry David Thoreau \nHenry David Thoreau's 1854 non-fiction work about life and philosophy from his time living in a self-built cabin beside Walden Lake in Concord, Massachusetts." }
+    ]},
+    { "name": "Bible Readings", "class": "color-firstaid", "items": [
+      { "title": "Bible Readings - Genesis", "tooltip": " by Kentucky Baptist Church \nBible readings by Pastor Samuels." },
+      { "title": "Bible Readings - Revelation", "tooltip": " by Kentucky Baptist Church \nBible readings by Pastor Samuels." },
+      { "title": "Bible Readings - Sermon on the Mount", "tooltip": " by Kentucky Baptist Church \nBible readings by Pastor Samuels." },
+      { "title": "Bible Readings - The Crucifixion", "tooltip": " by Kentucky Baptist Church \nBible readings by Pastor Samuels." },
+      { "title": "Bible Readings - Tower of Babel", "tooltip": " by Kentucky Baptist Church \nBible readings by Pastor Samuels." }
+    ]},
+    { "name": "Philosophy", "class": "color-electrical", "items": [
+      { "title": "Philosophical Quotes - Aristotle", "tooltip": " by Philosophical Motivation Society of Louisville \nSelected quotes and readings from the works of the ancient Greek philosopher Aristotle (384 B.C. - 322 B.C.)" },
+      { "title": "Philosophical Quotes - Confucius", "tooltip": " by Philosophical Motivation Society of Louisville \nSelected quotes and readings by the ancient Chinese philosopher Confucius (551 B.C. - 479 B.C.)" },
+      { "title": "Philosophical Quotes - Machiavelli", "tooltip": " by Philosophical Motivation Society of Louisville \nSelected quotes and readings from the works of the political philosopher and statesman Niccolo Machiavelli (1469 - 1527)" },
+      { "title": "Philosophical Quotes - Rumi", "tooltip": " by Philosophical Motivation Society of Louisville \nSelected quotes and readings from the works of Jalal ad-Din Mohammad Rumi (1207 - 1273)" },
+      { "title": "Philosophical Quotes - The Art of War", "tooltip": " by Philosophical Motivation Society of Louisville \nSun-Tzu (6th century BC), was a Chinese general who lived in the Eastern Zhou period." },
+      { "title": "Philosophical Quotes - The Buddha", "tooltip": " by Philosophical Motivation Society of Louisville \nSelected quotes and readings by Siddhartha Gautama, also known as The Buddha." }
+    ]},
+    { "name": "Music Albums", "class": "color-cooking", "items": [
+      { "title": "A Boy from Kentucky", "tooltip": " by Hank Gilman \nReleased August 1978. Countryfile Recordings." },
+      { "title": "A Truck Full of Love", "tooltip": " by Jack Dimestore \nReleased June 1983. Dimestore Legend Sounds." },
+      { "title": "Berlin nach Stuttgart", "tooltip": " by Gunther Oberhauser \nReleased January 1990. Berlin Records." },
+      { "title": "Best of the Bojangles", "tooltip": " by The Bojangles \nReleased July 1984. Londinium Records." },
+      { "title": "Buck's Plum Outta Luck (live)", "tooltip": " by Bucky Brooks \nReleased May 1981. Countryfile Recordings." },
+      { "title": "Can of Tomatoes", "tooltip": " by Gangsta-Z \nReleased June 1992. Universalis Sounds." },
+      { "title": "Carmina Burana", "tooltip": " by Kentucky State Choir \nRecorded live in Louisville at the Kentucky State Festival 1984." },
+      { "title": "Constant Worship", "tooltip": " by Songs of Glory \nSongs and hymns of worship and praise." },
+      { "title": "Constant Worship - Vol 2", "tooltip": " by Songs of Glory \nEven more songs and hymns of worship and praise." },
+      { "title": "Cries of the Damned", "tooltip": " by Sinsilla \nReleased October 1987. Universalis Sounds." },
+      { "title": "Down the Road", "tooltip": " by Noah Dodds \nReleased February 1938. Countryfile Productions." },
+      { "title": "Dying Strike Official Soundtrack", "tooltip": " by Maria Dionne \nReleased March 1993. Universalis Sounds." },
+      { "title": "Eurodance '92", "tooltip": " by Gunther Oberhauser \nReleased March 1992. Berlin Records." },
+      { "title": "Freddy's Big Balloon", "tooltip": " by The Bojangles \nReleased October 1962. Londinium Records." },
+      { "title": "Fright Night", "tooltip": " by Joe Johnson \nReleased October 1982. Universalis Sounds." },
+      { "title": "Get Funky!", "tooltip": " by Yvette Franklin \nReleased August 1977. Pacific Records." },
+      { "title": "Get Your Feet Wet", "tooltip": " by Llewelyn Hopkins \nReleased March 1969. Londinium Records." },
+      { "title": "Got Me Thinkin'", "tooltip": " by Old Billy Shanklin \nReleased April 1969. Texas Sound." },
+      { "title": "Heading for the Heat", "tooltip": " by Old Billy Shanklin \nReleased June 1971. Texas Sound." },
+      { "title": "Hell Has Opened", "tooltip": " by Sinsilla \nReleased November 1991. Universalis Sounds." },
+      { "title": "Hidden", "tooltip": " by The Question \nReleased December 1992. Potassium Records." },
+      { "title": "I Need You More", "tooltip": " by Maria Dionne \nReleased July 1991. Universalis Sounds." },
+      { "title": "I Swear", "tooltip": " by Hank Gilman \nReleased November 1978. Countryfile Productions." },
+      { "title": "I'll Look After You", "tooltip": " by Hooter and the Crayfish \nReleased May 1993. Major Brothers Productions." },
+      { "title": "Let's Make Love", "tooltip": " by Errol Costello \nReleased October 1983. Growtone Music." },
+      { "title": "Live at Rosewood Prison", "tooltip": " by Old Billy Shanklin \nReleased August 1973. Texas Sound." },
+      { "title": "Loretta", "tooltip": " by Chuck Halfpenny \nReleased July 1976. Countryfile Recordings." },
+      { "title": "Meditation Now!", "tooltip": " by Chip Ocean \nMeditation and relaxation. Give yourself some 'you' time!" },
+      { "title": "Moon Madness", "tooltip": " by Jerry Jones \nReleased July 1969. Londinium Records." },
+      { "title": "Mother Earth", "tooltip": " by Joe Johnson \nReleased April 1992. Universalis Sounds." },
+      { "title": "My Boy Asked Me...", "tooltip": " by Jack Dimestore \nReleased January 1981. Dimestore Legend Sounds." },
+      { "title": "Our Love Goes On", "tooltip": " by Maria Dionne \nReleased May 1988. Potassium Records." },
+      { "title": "Over", "tooltip": " by Steamship Hurricane \nReleased March 1993. Universalis Sounds." },
+      { "title": "Raps for Christ", "tooltip": " by Lazarus and the Disciples \nReleased July 1993. Universalis Sounds." },
+      { "title": "Reasons for War", "tooltip": " by Old Billy Shanklin \nReleased August 1971. Texas Sound." },
+      { "title": "Rock Gods", "tooltip": " by Sinsilla \nReleased April 1989. Universalis Sounds." },
+      { "title": "Running on Fumes", "tooltip": " by Will Bill Groovy \nReleased February 1988. Major Brothers Productions." },
+      { "title": "Sarcastic", "tooltip": " by Toni Williams \nReleased November 1992. Universalis Sounds." },
+      { "title": "The Depth of Your Love", "tooltip": " by Donny Mason \nReleased September 1983. The Hitlist Manufactuary." },
+      { "title": "Time for Love", "tooltip": " by Frankie Monro \nReleased May 1964. Crooner Records." },
+      { "title": "Uncle Billy's Kentucky Moonshine", "tooltip": " by Bucky Brooks \nReleased January 1985. Countryfile Recordings." },
+      { "title": "Where is Everybody?", "tooltip": " by Jerry Jones \nReleased December 1982. Londinium Records." },
+      { "title": "Who's Better?", "tooltip": " by Toni Williams \nReleased November 1992. Universalis Sounds." },
+      { "title": "You Love Me Too", "tooltip": " by Maria Dionne \nReleased March 1989. Potassium Records." },
+      { "title": "You're Gone", "tooltip": " by Steamship Hurricane \nReleased February 1992. Universalis Sounds." },
+      { "title": "Your Smile. Your Kiss.", "tooltip": " by Every Reason \nReleased February 1993. Potassium Records." }
+    ]},
+    { "name": "Historical Recordings", "class": "color-carpentry", "items": [
+      { "title": "Moments in American History - Day of Infamy", "tooltip": " by American Historical Society \nThe full text of, and commentary on, the speech given by President Franklin Delano Roosevelt to Congress on December 8, 1941." },
+      { "title": "Moments in American History - Gettysburg Address", "tooltip": " by American Historical Society \nThe full text of, and commentary on, the speech given by President Abraham Lincoln at Gettysburg, Pennsylvania, on the afternoon of November 19, 1863." },
+      { "title": "Moments in American History - The Constitution", "tooltip": " by American Historical Society \nA full reading of the US Constitution and its current amendments, along with commentary by historians." },
+      { "title": "Moments in American History - The Moon Landing", "tooltip": " by American Historical Society \nExcerpts from the live broadcast from the moon and of the NASA control room during the first moon landing of July 20, 1969." },
+      { "title": "Moments in American History - Watergate", "tooltip": " by American Historical Society \nExcerpts from, and commentary on, speeches and tapes of President Richard Nixon about the 1972 break-in." }
+    ]}
+  ],
+  "vhs": {
+    "retail": [
+      { "category": "Skill Tapes", "class": "color-lavender", "tapes": [
+        { "title": "Dead Wrong", "tooltip": "Provides Aiming +50 XP and Reloading +50 XP" },
+        { "title": "Mother's Boy", "tooltip": "Provides Short Blade +50 XP" },
+        { "title": "Carzone Episode 1: Tire Maintenance", "tooltip": "Provides Mechanics +300 XP" },
+        { "title": "Carzone Episode 2: Engines", "tooltip": "Provides Mechanics +300 XP" },
+        { "title": "Carzone Episode 3: Windows", "tooltip": "Provides Mechanics +300 XP" },
+        { "title": "Exposure Survival Episode 1: Fishing", "tooltip": "Provides Fishing +200 XP, Teaches Fishing Rod Recipe" },
+        { "title": "Exposure Survival Episode 2: Bait", "tooltip": "Provides Fishing +300 XP" },
+        { "title": "Exposure Survival Episode 3: Farming", "tooltip": "Provides Agriculture +350 XP" },
+        { "title": "Exposure Survival Episode 4: Fire", "tooltip": "Provides Carpentry +300 XP" },
+        { "title": "Exposure Survival Episode 5: Camping", "tooltip": "Provides Carpentry +200 XP and Foraging +50 XP" },
+        { "title": "Exposure Survival Episode 6: Trapping", "tooltip": "Provides Trapping +500 XP, teaches Trap Crate Recipe" },
+        { "title": "Exposure Survival Episode 7: Foraging", "tooltip": "Provides Foraging +350 XP" },
+        { "title": "Exposure Survival Episode 8: Water Collection", "tooltip": "Provides Carpentry +350 XP" },
+        { "title": "The Cook Show Episode 1: Cake", "tooltip": "Provides Cooking +300 XP, Teaches Cake Batter Recipe" },
+        { "title": "The Cook Show Episode 2: Soup", "tooltip": "Provides Cooking +400 XP" },
+        { "title": "The Cook Show Episode 3: Stew", "tooltip": "Provides Cooking +250 XP" },
+        { "title": "The Cook Show Episode 4: Salads", "tooltip": "Provides Cooking +200 XP" },
+        { "title": "The Cook Show Episode 5: Stir-Fry", "tooltip": "Provides Cooking +200 XP" },
+        { "title": "The Cook Show Episode 6: Sandwiches", "tooltip": "Provides Cooking +250 XP" },
+        { "title": "The Cook Show Episode 7: Pie", "tooltip": "Provides Cooking +300 XP, teaches Pie Dough Recipe" },
+        { "title": "Woodcraft Episode 1: Bookcases", "tooltip": "Provides Carpentry +250 XP" },
+        { "title": "Woodcraft Episode 2: Flooring and Signs", "tooltip": "Provides Carpentry +200 XP" },
+        { "title": "Woodcraft Episode 3: Frames and Walls", "tooltip": "Provides Carpentry +200 XP" },
+        { "title": "Woodcraft Episode 4: Shelves and Fencing", "tooltip": "Provides Carpentry +300 XP" },
+        { "title": "Woodcraft Episode 5: Doors", "tooltip": "Provides Carpentry +150 XP" },
+        { "title": "Woodcraft Episode 6: Beds and Tables", "tooltip": "Provides Carpentry +250 XP" },
+        { "title": "Woodcraft Episode 7: Stairs", "tooltip": "Provides Carpentry +250 XP" },
+        { "title": "Z-Squad S2.03", "tooltip": "Provides Metalworking +50 XP and Mechanics +50 XP" }
+      ]},
+      { "category": "Entertainment Tapes (Non Skill)", "class": "color-mint", "tapes": [
+        { "title": "Ace Pilot", "tooltip": "1986. PG for violence." },
+        { "title": "All Over Again", "tooltip": "1992. PG for implied violence." },
+        { "title": "Blood in the Hood", "tooltip": "1991. Rated R for swearing and violence." },
+        { "title": "Breaking Points", "tooltip": "1991. Rated R for violence." },
+        { "title": "Cosa Nostra", "tooltip": "1989. Rated R." },
+        { "title": "Cyberkiller 2: Redemption Road", "tooltip": "1993. Rated R for violence and gore." },
+        { "title": "Dark Agent", "tooltip": "1987. Rated R for violence." },
+        { "title": "Dime Diamonds", "tooltip": "1992. Rated R for violence, swearing." },
+        { "title": "Dog 4oblin: Zero Gravity", "tooltip": "1993. R for violence and brief nudity." },
+        { "title": "Dog Goblin II: Bavarian Slaughter", "tooltip": "1991. R." },
+        { "title": "Dog Goblin III: Back to the Roots", "tooltip": "1992. R." },
+        { "title": "Dying Strike", "tooltip": "1993. Rated PG-13 for violence." },
+        { "title": "Eagle Down", "tooltip": "1988. Rated R for violence." },
+        { "title": "Fred and Ali's Radical Journey", "tooltip": "1985. G." },
+        { "title": "Ghoul Stoppers", "tooltip": "1984. PG-13 for horror elements, crude comedy." },
+        { "title": "Global Warrior", "tooltip": "1992. R." },
+        { "title": "Home Invaders 2: Lost in Louisville", "tooltip": "1992. Rated PG for mild violence/swearing." },
+        { "title": "Lives Taken", "tooltip": "1992. Rated R for violence." },
+        { "title": "Loveheart", "tooltip": "1988. R." },
+        { "title": "Man on the Run", "tooltip": "1992. Rated R for swearing, violence." },
+        { "title": "Marriage License", "tooltip": "1984. Rated PG." },
+        { "title": "Molly Brown", "tooltip": "1971. R." },
+        { "title": "Operation Fort Knox", "tooltip": "1964. PG for violence." },
+        { "title": "Paris in the Rain", "tooltip": "1952. G." },
+        { "title": "Pleistocene Land", "tooltip": "1993. Rated PG-13 for violence." },
+        { "title": "Return of the Nightporter", "tooltip": "1989. PG-13." },
+        { "title": "Satin and Silk", "tooltip": "1986. Rated R for violence, adult themes." },
+        { "title": "Slow Descent", "tooltip": "1979. PG." },
+        { "title": "Sordid Client", "tooltip": "1990. Rated NC-17 for nudity and violence." },
+        { "title": "Squad Down", "tooltip": "1992. Rated PG-13 for swearing." },
+        { "title": "Strange Little Men", "tooltip": "1985. Rated PG-13 for horror themes." },
+        { "title": "Survival Instinct", "tooltip": "1992. Rated X for violence and unnecessary nudity." },
+        { "title": "Tangier", "tooltip": "1941. Black and white. PG." },
+        { "title": "The Crying of the Foxes", "tooltip": "1989. Rated R for violence, horror themes." },
+        { "title": "The Danger in Your Bed", "tooltip": "1992. Rated R." },
+        { "title": "The Dog Goblin", "tooltip": "1990. R." },
+        { "title": "The Janitor", "tooltip": "1990. Rated R for violence." },
+        { "title": "Three Deaths and a Divorce", "tooltip": "1991. Rated PG-13 for language." },
+        { "title": "Timbergap Manor", "tooltip": "1992. Rated PG for mild sexuality." },
+        { "title": "Tired in Toronto", "tooltip": "1992. PG." },
+        { "title": "Train Bomb", "tooltip": "1992. Rated R for violence." },
+        { "title": "War Front", "tooltip": "1989. PG-13 for violence." },
+        { "title": "You Are Dead (aka Vous Êtes Mort)", "tooltip": "1992 director's cut. Unrated." },
+        { "title": "Albert Wellen QC S2.01" }, { "title": "Albert Wellen QC S2.02" }, { "title": "Albert Wellen QC S2.03" }, { "title": "Albert Wellen QC S2.04" }, { "title": "Albert Wellen QC S2.05" },
+        { "title": "Ballincoolin S1.01 - The Arrival" }, { "title": "Ballincoolin S1.02 - The Father" }, { "title": "Ballincoolin S1.03 - The Donkey Cart Race" }, { "title": "Ballincoolin S1.04 - The Election" }, { "title": "Ballincoolin S1.05 - The Departure" },
+        { "title": "Dead Wrong: The Series S2.01 - Dead Day Afternoon" }, { "title": "Dead Wrong: The Series S2.02 - Dead First, Questions Later" }, { "title": "Dead Wrong: The Series S2.03 - The Sandwich Sniper" }, { "title": "Dead Wrong: The Series S2.04 - Deadface" }, { "title": "Dead Wrong: The Series S2.05 - The Explosive Bomb" },
+        { "title": "Simon's Fitness Club Episode 1: Squats" }, { "title": "Simon's Fitness Club Episode 2: Push-Ups" }, { "title": "Simon's Fitness Club Episode 3: Sit-Ups" }, { "title": "Simon's Fitness Club Episode 4: Burpees" }, { "title": "Simon's Fitness Club Episode 5: Weight Training" },
+        { "title": "Space Crew S3.01 - The Jansarian Smuggler" }, { "title": "Space Crew S3.02 - Attack of The Kerlan Pirates" }, { "title": "Space Crew S3.03 - The Missing Planet" }, { "title": "Space Crew S3.04 - The Pyramid of Ollarf" }, { "title": "Space Crew S3.05 - The Return" },
+        { "title": "Strangely True S2.01 - The Redneck Beast" }, { "title": "Strangely True S2.02 - The Abduction of Harry and Hannah Barrett" }, { "title": "Strangely True S2.03 - Wendigo Ranch" }, { "title": "Strangely True S2.04 - The Louisville Lights" }, { "title": "Strangely True S2.05 - The Haunted Hunting Lodge of Valley Station" },
+        { "title": "The Magical Woodland Episode 1: Furbert" }, { "title": "The Magical Woodland Episode 2: Boris" }, { "title": "The Magical Woodland Episode 3: Moley" }, { "title": "The Magical Woodland Episode 4: Pancake" }, { "title": "The Magical Woodland Episode 5: Fluffyfoot" },
+        { "title": "The Moderators S2.01" }, { "title": "The Moderators S2.02" }, { "title": "The Moderators S2.03" }, { "title": "The Moderators S2.04" }, { "title": "The Moderators S2.05" },
+        { "title": "The Omega Department S3.01" }, { "title": "The Omega Department S3.02" }, { "title": "The Omega Department S3.03" }, { "title": "The Omega Department S3.04" }, { "title": "The Omega Department S3.05" },
+        { "title": "The Omega Department S5.01" }, { "title": "The Omega Department S5.02" }, { "title": "The Omega Department S5.03" }, { "title": "The Omega Department S5.04" }, { "title": "The Omega Department S5.05" },
+        { "title": "The Thompsons S3.01 - Herb's Hair" }, { "title": "The Thompsons S3.02 - High Speed Tram" }, { "title": "The Thompsons S3.03 - Marie Gets Fired" }, { "title": "The Thompsons S3.04 - Lester Fails" }, { "title": "The Thompsons S3.05 - Halloween House of Terror" },
+        { "title": "Washington High S5.01 - Driving Lesson" }, { "title": "Washington High S5.02 - Blind Date" }, { "title": "Washington High S5.03 - Caffeine Pills" }, { "title": "Washington High S5.04 - Class President" }, { "title": "Washington High S5.05 - Prom Night" },
+        { "title": "Z-Squad S2.01" }, { "title": "Z-Squad S2.02" }, { "title": "Z-Squad S2.04" }, { "title": "Z-Squad S2.05" }
+      ]}
+    ],
+    "home": [
+      { "category": "Skill Tapes", "class": "color-cerulean", "tapes": [
+        { "title": "Basic Gun Handling (Officer Use Only)", "tooltip": "Provides Aiming +200 XP and Reloading +300 XP" },
+        { "title": "Combat Wound Management", "tooltip": "Provides First Aid +350 XP" },
+        { "title": "Grady v King", "tooltip": "Provides Lightfooted +50 XP" },
+        { "title": "Granny Nani", "tooltip": "Provides Tailoring +300 XP" },
+        { "title": "Mathematical Quadratics and Algebraic Configurations", "tooltip": "Provides Long Blunt +50 XP" },
+        { "title": "Muldraugh AV Club", "tooltip": "Provides Electrical +300 XP, teaches Makeshift Radio Recipe" },
+        { "title": "OSCC '92", "tooltip": "Provides Mechanics +50 XP" },
+        { "title": "RMFA", "tooltip": "Provides First Aid +300 XP" },
+        { "title": "TV Repair", "tooltip": "Provides Electrical +300 XP" },
+        { "title": "Tailoring 101", "tooltip": "Provides Tailoring +300 XP" },
+        { "title": "Tree Planting Guide", "tooltip": "Provides Agriculture +300 XP" },
+        { "title": "no 9", "tooltip": "Provides Metalworking +400 XP, teaches Metal Fence Recipe" },
+        { "title": "nof vid", "tooltip": "Provides Metalworking +400 XP, teaches Metal Roof and Metal Wall Recipes" },
+        { "title": "stock cars", "tooltip": "Provides Mechanics +50 XP" }
+      ]},
+      { "category": "Entertainment Tapes (Non Skill)", "class": "color-stone", "tapes": [
+        { "title": "#012" }, { "title": "8th Birthday" }, { "title": "ARRA Pitch" }, { "title": "Alaskan Gulf Documentary" }, { "title": "Alva Richards (Ashling Dwyer)" }, { "title": "Alva Richards (Pierce Daniels)" },
+        { "title": "Baby Summer!" }, { "title": "Bauman and Triskel (Pleistocene Land)" }, { "title": "Bauman and Triskel April 15" }, { "title": "Bauman and Triskel April 8" }, { "title": "Bauman/Triskel 14" },
+        { "title": "Black Holes space doc" }, { "title": "Brent's 21st" }, { "title": "Brushing Your Teeth with Zachary Bunny" }, { "title": "CAPE CANAVERAL VACATION July 1990" }, { "title": "CCCW" },
+        { "title": "Caring For Your Employees" }, { "title": "Christmas Eve Visit!" }, { "title": "Cities of the World - Lagos" }, { "title": "Cities of the World - Paris" }, { "title": "Cities of the World - Seoul" },
+        { "title": "D&M's Wedding" }, { "title": "DAD'S TAPE DO NOT TOUCH" }, { "title": "Dad's boring golf crap" }, { "title": "Dad's shows" }, { "title": "Dangerous Strangers with Jemima Bunny" },
+        { "title": "Dating Agency (Female)" }, { "title": "Dating Agency (Male)" }, { "title": "Dental Care" }, { "title": "ELIJAH 1ST BDAY" }, { "title": "English Cup (4.12.91)" },
+        { "title": "Every Reason Tape!!" }, { "title": "FLORIDA VACATION June 1991" }, { "title": "Fairweather-Mahoney 2/11/93" }, { "title": "Final Regards" }, { "title": "Flight Training #6" },
+        { "title": "For Scott" }, { "title": "Fort Knox Documentary" }, { "title": "Gabby first steps" }, { "title": "Gators doc" }, { "title": "Golf #14" }, { "title": "Grampa Message" },
+        { "title": "Grandma's 80th" }, { "title": "HOLLYWOOD INSIDER SPECIAL" }, { "title": "Hair Dyeing at Home" }, { "title": "Hao first Words!" }, { "title": "Honey Bears v. Rangers 5.8.92 (Baseball)" },
+        { "title": "Hurricanes v. Mothballs 4/22/91" }, { "title": "IRELAND VACATION 1989" }, { "title": "J 13th birthday" }, { "title": "Janie's tape" }, { "title": "Jeff/Kaylee Vegas Wedding" },
+        { "title": "Jenn's 18th" }, { "title": "Joni-Jim Proposal vid!!" }, { "title": "KNCF" }, { "title": "Kafka Animated - A Message from the Emperor" }, { "title": "Keith's Big Birthday!" },
+        { "title": "Kentucky Furlongs (5.2.92)" }, { "title": "Kid shows" }, { "title": "LARRY'S RAP DEMO (PRACTICE)" }, { "title": "Little Jackson's 4th Bday" }, { "title": "Lopez-Grady fight" },
+        { "title": "MOM'S TAPE" }, { "title": "Magical Woodland Fox" }, { "title": "Moderators" }, { "title": "Mothballs v. Honey Bears 2.16.91" }, { "title": "Muhammet's First Words" },
+        { "title": "New kitties!" }, { "title": "Ohio River" }, { "title": "Omega Department - DO NOT TAPE OVER" }, { "title": "Omega Department - S3 E2" }, { "title": "Omega Department ghost town" },
+        { "title": "One Eighty (darts)" }, { "title": "Ooh, Shut That Door! S7E5" }, { "title": "Our Wedding 19.1.88" }, { "title": "Playing with Bruce" }, { "title": "Preparing a Funeral (What Really Happens)" },
+        { "title": "QUIZ SHOWS" }, { "title": "Quentin's 16th" }, { "title": "Rangers v. Hurricanes 8.12.92 (Baseball)" }, { "title": "Rangers v. Mothballs 12.8.90" }, { "title": "Reverend Quigley" },
+        { "title": "Riverside Classic '92" }, { "title": "Riverside vs West Point footie" }, { "title": "Roger's VHS" }, { "title": "ST 4" }, { "title": "Sandy Perry's Dating Advice" },
+        { "title": "School recital" }, { "title": "Secrets of Spiffo's Special Sauce" }, { "title": "Shows" }, { "title": "Soaps Tape" }, { "title": "Spiffo World June 1992" },
+        { "title": "Sunday Night Late 12/20/92" }, { "title": "Sunset Drive" }, { "title": "TDTOE" }, { "title": "Tempest" }, { "title": "The Signs of Satanism" },
+        { "title": "Tracy & Polly 8th Bday (Cute!)" }, { "title": "Trends in Commodities" }, { "title": "Up with the Joneses" }, { "title": "Washington High DO NOT TOUCH" }, { "title": "Wedding video!!!!" },
+        { "title": "Will/Ana Wedding" }, { "title": "XYZ's with Abe E. Seez!" }, { "title": "Xmas '91" }, { "title": "Xmas Play" }, { "title": "beach summer 91" }, { "title": "conspiracy crap???" },
+        { "title": "foxes doc" }, { "title": "horse race" }, { "title": "molly june 30" }, { "title": "moocows" }, { "title": "muldraugh v west point soccer" }
+      ]}
+    ]
+  },
+  "maps": [
+    { "location": "March Ridge" },
+    { "location": "Muldraugh" },
+    { "location": "Riverside", "class": "color-sand" },
+    { "location": "Rosewood" }
+  ]
+}
