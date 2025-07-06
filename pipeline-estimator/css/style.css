@@ -1,0 +1,116 @@
+/* --- Global Color Variables --- */
+:root {
+    --color-dark-blue: #2c3e50;
+    --color-light-blue: #3498db;
+    --color-pink: #e91e63;
+    --color-orange: #f39c12;
+    --color-green: #2ecc71;
+    --color-yellow: #f1c40f;
+    --color-purple: #8e44ad;
+}
+
+/*
+ * --- Tab Color Styling ---
+ */
+.nav-tabs .nav-link[data-color="dark-blue"]  { background-color: var(--color-dark-blue);  color: white; }
+.nav-tabs .nav-link[data-color="light-blue"] { background-color: var(--color-light-blue); color: white; }
+.nav-tabs .nav-link[data-color="pink"]       { background-color: var(--color-pink);       color: white; }
+.nav-tabs .nav-link[data-color="orange"]     { background-color: var(--color-orange);     color: white; }
+.nav-tabs .nav-link[data-color="green"]      { background-color: var(--color-green);      color: white; }
+.nav-tabs .nav-link[data-color="yellow"]     { background-color: var(--color-yellow);     color: #333; }
+.nav-tabs .nav-link[data-color="purple"]     { background-color: var(--color-purple);     color: white; }
+
+/*
+ * --- Make the active tab stand out ---
+ */
+.nav-tabs .nav-link {
+    border-color: transparent !important;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.nav-tabs .nav-link:not(.active) {
+    opacity: 0.65;
+}
+
+.nav-tabs .nav-link.active {
+    opacity: 1;
+}
+
+/* --- Style for editable table cells --- */
+.table td[contenteditable="true"] {
+    background-color: #ffffe0;
+}
+[data-bs-theme="dark"] .table td[contenteditable="true"] {
+    background-color: #5d5d3c;
+}
+.table td[contenteditable="true"]:focus {
+    outline: 2px solid var(--bs-primary);
+    box-shadow: 0 0 5px var(--bs-primary);
+}
+
+/* Make tables look good in both themes */
+.table {
+    --bs-table-bg: var(--bs-body-bg);
+    --bs-table-striped-bg: var(--bs-secondary-bg);
+}
+
+/*
+ * A special class to hide elements from the web view
+ * that should ONLY appear when printing.
+ */
+.print-only {
+    display: none;
+}
+
+
+/* ==========================================================================
+ *  --- ADVANCED PRINT STYLES FOR PDF EXPORT ---
+ *  ========================================================================== */
+@media print {
+    @page {
+        size: A3 landscape;
+        margin: 1cm;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        font-size: 8pt;
+    }
+
+    /* Hide all non-essential UI */
+    header, .nav-tabs, .no-print, footer {
+        display: none !important;
+    }
+
+    /* Reset the layout for printing */
+    .container-fluid, .tab-content, .tab-pane.active {
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
+        position: static !important;
+        display: block !important;
+    }
+
+    .print-area, .print-area .row, .print-area .col-12 {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block;
+    }
+
+    .table-responsive {
+        overflow-x: visible !important;
+    }
+
+    .table {
+        width: 100%;
+        table-layout: auto;
+    }
+
+    /* Make the special print-only summary visible */
+    .print-only {
+        display: block !important;
+        visibility: visible !important;
+        page-break-inside: avoid; /* Try to keep this block from splitting across pages */
+    }
+}
