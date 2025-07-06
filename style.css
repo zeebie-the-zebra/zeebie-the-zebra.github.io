@@ -1,0 +1,109 @@
+/* --- Basic Setup & Background --- */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* A deep, dark gray */
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.15), transparent 40%),
+                      radial-gradient(circle at bottom left, rgba(45, 156, 219, 0.15), transparent 40%);
+}
+
+/* --- Main Menu Card --- */
+.menu-card {
+    background: rgba(29, 29, 29, 0.75);
+    padding: 3rem 4rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    max-width: 800px;
+}
+
+/* --- Animated Gradient Title --- */
+.title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    background: linear-gradient(90deg, #8A2387, #E94057, #F27121);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-gradient-animation 5s linear infinite;
+}
+
+@keyframes text-gradient-animation {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+}
+
+/* --- Button Container --- */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stacks buttons vertically */
+    gap: 1.5rem; /* Space between buttons */
+    align-items: center; /* Center buttons horizontally */
+}
+
+/* --- Fancy Menu Buttons --- */
+.menu-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    border-radius: 50px; /* Pill shape */
+    background: linear-gradient(45deg, #2D9CDB, #56CCF2);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 80%; /* Makes buttons a consistent width */
+    max-width: 400px;
+}
+
+.menu-button:hover {
+    transform: translateY(-5px); /* "Lifts" the button */
+    box-shadow: 0 10px 25px rgba(45, 156, 219, 0.4);
+    background: linear-gradient(45deg, #56CCF2, #2D9CDB);
+}
+
+.menu-button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(45, 156, 219, 0.3);
+}
+
+/* --- Responsive Design for Smaller Screens --- */
+@media (max-width: 768px) {
+    .menu-card {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .menu-button {
+        width: 100%;
+        padding: 1rem 1.5rem;
+    }
+}
