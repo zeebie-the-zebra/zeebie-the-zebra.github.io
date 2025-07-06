@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Fabrication Cost Estimator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid p-4">
+        <header class="d-flex flex-wrap justify-content-between align-items-center pb-3 mb-3 border-bottom">
+            <div>
+                <h1 class="h2 mb-0">Pipeline Fabrication Cost Estimator</h1>
+                <h4 id="header-project-name" class="text-muted fw-normal mb-0">Quotation: <span id="project-name-display">None</span></h4>
+            </div>
+
+            <div class="d-flex flex-wrap align-items-center gap-3 mt-2">
+                <!-- Group 1: Project Management -->
+                <div class="input-group">
+                    <select id="project-selector" class="form-select" style="max-width: 200px;" title="Load an existing project"></select>
+                    <button id="new-project-btn" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Create a new project">New</button>
+                    <button id="save-project-btn" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Save all changes to the current project">Save</button>
+                    <button id="rename-project-btn" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Rename the current project">Rename</button>
+                </div>
+
+                <!-- Group 2: Project Import/Export -->
+                <div class="input-group">
+                    <button id="export-project-btn" class="btn btn-outline-secondary" data-bs-toggle="tooltip" title="Export the full current project (line items, rates, settings)">Export Project</button>
+                    <label for="import-project-input" class="btn btn-outline-secondary">Import Project</label>
+                    <input type="file" id="import-project-input" accept=".json" class="d-none">
+                </div>
+
+                <!-- Group 3: Rates Import/Export (NEW) -->
+                <div class="input-group">
+                    <button id="export-rates-btn" class="btn btn-outline-info" data-bs-toggle="tooltip" title="Export ONLY the shop rate tables (Bevel, NDT, etc.) as a preset">Export Rates</button>
+                    <label for="import-rates-input" class="btn btn-outline-info">Import Rates</label>
+                    <input type="file" id="import-rates-input" accept=".json" class="d-none">
+                </div>
+
+                <!-- Group 4: Standalone Actions -->
+                <div class="d-flex gap-2">
+                    <button id="delete-project-btn" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Permanently delete the current project">Delete</button>
+                    <button id="theme-toggle-btn" class="btn btn-outline-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Toggle light/dark theme">🌙</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- The rest of the body is unchanged -->
+        <ul class="nav nav-tabs" id="main-tabs" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#start-pane" type="button" role="tab" data-color="dark-blue" data-bs-placement="top" title="Instructions for using the tool">Start Page</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#fabrication-pane" type="button" role="tab" data-color="light-blue" data-bs-placement="top" title="Input pipe details and components">Fabrication</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#hydrostatic-test-pane" type="button" role="tab" data-color="light-blue" data-bs-placement="top" title="Choose which items require testing">Hydrostatic Test</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#summary-pane" type="button" role="tab" data-color="light-blue" data-bs-placement="top" title="Compile quotation from other data">Summary</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#productivity-pane" type="button" role="tab" data-color="pink" data-bs-placement="top" title="Configure productivity and composite rates">Productivity</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#bevel-pane" type="button" role="tab" data-color="orange" data-bs-placement="top" title="Editable man-hour lookup">Bevel</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#setup-pane" type="button" role="tab" data-color="orange" data-bs-placement="top" title="Setup time estimations">Setup</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#buttweld-pane" type="button" role="tab" data-color="orange" data-bs-placement="top" title="Buttweld component estimation">Buttweld</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#olet-pane" type="button" role="tab" data-color="orange" data-bs-placement="top" title="Olet labor estimates">Olet</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#socket-pane" type="button" role="tab" data-color="orange" data-bs-placement="top" title="Socket fitting time">Socket</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#flange-pane" type="button" role="tab" data-color="orange" data-bs-placement="top" title="Flange welding/fitting">Flange</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#ndt-pane" type="button" role="tab" data-color="green" data-bs-placement="top" title="Rates for X-ray, Gamma Ray, MPI">NDT</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#handling-pane" type="button" role="tab" data-color="yellow" data-bs-placement="top" title="Labor for handling & shipping">Handling</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#hydro-test-rates-pane" type="button" role="tab" data-color="purple" data-bs-placement="top" title="Hourly rate for hydrostatic tests < 4,000 psi">Hydro Test</button></li>
+        </ul>
+        <main class="tab-content p-3 border border-top-0 rounded-bottom" id="main-tab-content">
+            <div class="tab-pane fade show active" id="start-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="fabrication-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="hydrostatic-test-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="summary-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="productivity-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="bevel-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="setup-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="buttweld-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="olet-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="socket-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="flange-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="ndt-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="handling-pane" role="tabpanel"></div>
+            <div class="tab-pane fade" id="hydro-test-rates-pane" role="tabpanel"></div>
+        </main>
+        <footer class="mt-4 py-3 text-center border-top">
+            <div class="container">
+                <!-- App info -->
+                <p class="text-muted small mb-2">
+                    <span>Project: <span id="footer-project-name">None</span></span>
+                    <span class="mx-2">|</span>
+                    <span>Last Saved: <span id="footer-last-saved">N/A</span></span>
+                    <span class="mx-2">|</span>
+                    <span>App Version: 1.0.4</span>
+                </p>
+
+                <!-- Support link -->
+                <p class="mb-0">
+                    Found this helpful? Feel free to
+                    <a href="https://ko-fi.com/zeebie" target="_blank" rel="noopener noreferrer">buy me a coffee</a>.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
