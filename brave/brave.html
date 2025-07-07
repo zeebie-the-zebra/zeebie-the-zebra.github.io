@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Run Brave Browser in RAM on Linux</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        main {
+            max-width: 850px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1, h2 {
+            color: #1a2b4d;
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 10px;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 6px;
+            overflow-x: auto;
+            white-space: pre;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+        code {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            background-color: #eef2f5;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            font-size: 1em; /* Reset font size inside pre */
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .note {
+            background-color: #fffbe6;
+            border-left: 5px solid #ffc107;
+            padding: 15px 20px;
+            margin: 2em 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .note strong {
+            color: #a67c00;
+        }
+        .success {
+            background-color: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 15px 20px;
+            margin: 2em 0;
+            border-radius: 0 4px 4px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>How to Run Brave Browser in RAM for a Performance Boost</h1>
+        </header>
+
+        <section id="intro">
+            <p>This guide will walk you through creating a script that runs your Brave browser profile and cache entirely from your system's RAM.</p>
+            <h3>Why do this?</h3>
+            <ul>
+                <li><strong>Speed:</strong> RAM is significantly faster than an SSD or HDD, leading to a snappier browsing experience.</li>
+                <li><strong>Reduced SSD Wear:</strong> It minimizes constant small read/write operations to your main drive, which can extend the life of an SSD.</li>
+            </ul>
+            <h3>Prerequisites:</h3>
+            <ul>
+                <li>You are using a <strong>Linux</strong> operating system.</li>
+                <li><strong>Brave Browser</strong> is already installed.</li>
+                <li>You are comfortable using the command line terminal.</li>
+            </ul>
+        </section>
+
+        <section id="step1">
+            <h2>Step 1: Create a RAM-based Cache Directory</h2>
+            <p>First, we'll create a dedicated directory for the browser's cache in <code>/tmp</code>, which is a temporary file system that typically resides in RAM.</p>
+            <p>Open your terminal and run the following command:</p>
+            <pre><code>mkdir -p /tmp/brave-cache</code></pre>
+        </section>
+
+        <section id="step2">
+            <h2>Step 2: Create the Launcher Script</h2>
+            <p>Next, we will create the main script that handles copying your profile to RAM, launching Brave, and syncing the profile back to disk when you close the browser.</p>
+            <ol>
+                <li>
+                    <p>Open a new file named <code>brave-ram</code> in a text editor like <code>nano</code>. The <code>~/.local/bin</code> directory is a standard place for user-specific scripts.</p>
+                    <pre><code>nano ~/.local/bin/brave-ram</code></pre>
+                </li>
+                <li>
+                    <p>Copy and paste the entire script below into the editor.</p>
+                    <pre><code>#!/bin/bash
+
+# --- Configuration ---
+# Your on-disk Brave profile location. This is the standard path.
+DISK_PROFILE="$HOME/.config/BraveSoftware/Brave-Browser"
+
+# The temporary RAM locations.
+RAM_PROFILE="/tmp/brave-user"
+RAM_CACHE="/tmp/brave-cache"
+
+# The direct path to the Brave executable. 
+# This avoids issues with wrapper scripts. Verify this path on your system.
+BRAVE_EXECUTABLE="/opt/brave-bin/brave"
+
+# --- Safety trap ---
+# This ensures your data is saved even if the script is interrupted.
+trap 'echo "[!] Script interrupted. Syncing profile back to disk..."; sync_back; exit' SIGINT SIGTERM
+
+# --- Functions ---
+sync_back() {
+  echo "[*] Syncing Brave profile from RAM back to disk..."
+  # Use rsync to copy changes from RAM back to the disk profile
+  rsync -aq --delete "$RAM_PROFILE/" "$DISK_PROFILE/"
+  echo "[*] Sync complete."
+}
+
+# --- Main Script Logic ---
+
+# 1. Sync from disk to RAM
+echo "[*] Copying Brave profile to RAM (this may take a moment)..."
+rsync -aq --delete "$DISK_PROFILE/" "$RAM_PROFILE/"
+
+# 2. Launch Brave with RAM profile & cache, passing along any arguments
+echo "[*] Launching Brave from RAM..."
+"$BRAVE_EXECUTABLE" --user-data-dir="$RAM_PROFILE" --disk-cache-dir="$RAM_CACHE" "$@"
+
+# 3. After Brave closes, sync back to disk
+sync_back
+</code></pre>
+                </li>
+                <div class="note">
+                    <p><strong>Important:</strong> Check that the <code>BRAVE_EXECUTABLE</code> path is correct for your system. The path <code>/opt/brave-bin/brave</code> is common for AUR installations. You can find your path by running <code>which brave</code>. Adjust the line in the script if needed.</p>
+                </div>
+                <li>
+                    <p>Save the file and exit <code>nano</code> by pressing <strong>Ctrl+O</strong>, hitting <strong>Enter</strong> to confirm, and then <strong>Ctrl+X</strong> to exit.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="step3">
+            <h2>Step 3: Make the Script Executable</h2>
+            <p>Your new script needs permission to be executed. Grant it with the <code>chmod</code> command:</p>
+            <pre><code>chmod +x ~/.local/bin/brave-ram</code></pre>
+        </section>
+
+        <section id="step4">
+            <h2>Step 4: Create a Desktop Application Shortcut</h2>
+            <p>To launch your RAM-powered Brave easily from your application menu, you need to create a <code>.desktop</code> file.</p>
+            <ol>
+                <li>
+                    <p>Open a new desktop file in <code>nano</code>:</p>
+                    <pre><code>nano ~/.local/share/applications/brave-ram.desktop</code></pre>
+                </li>
+                <li>
+                    <p>Copy and paste the following content into the file:</p>
+                    <pre><code>[Desktop Entry]
+Name=Brave (RAM-only)
+Comment=Browse the web with a profile loaded into RAM
+Exec=/home/%u/.local/bin/brave-ram
+Terminal=false
+Type=Application
+Icon=brave-browser
+Categories=Network;WebBrowser;
+</code></pre>
+                </li>
+                <li>
+                    <p>Save the file and exit nano (<strong>Ctrl+O</strong>, <strong>Enter</strong>, <strong>Ctrl+X</strong>).</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="step5">
+            <h2>Step 5: Update Your Application Database</h2>
+            <p>Tell your system to recognize the new shortcut by updating its desktop database:</p>
+            <pre><code>update-desktop-database ~/.local/share/applications/</code></pre>
+            <p>You should now find a new application called <strong>"Brave (RAM-only)"</strong> in your system's application menu.</p>
+        </section>
+
+        <section id="step6">
+            <h2>Step 6: Launch and Verify</h2>
+            <ol>
+                <li>Find and launch <strong>"Brave (RAM-only)"</strong> from your application menu. The first launch might take a few extra seconds as it copies your profile to RAM.</li>
+                <li>Once Brave is open, return to your terminal and run this command to check the running processes:
+                    <pre><code>pgrep -af brave</code></pre>
+                </li>
+                <li>You should see output confirming that Brave was launched with the temporary RAM paths. Look for the <code>--user-data-dir</code> and <code>--disk-cache-dir</code> flags pointing to <code>/tmp/</code>:
+                    <pre><code>2831532 /bin/bash /home/YOUR_USERNAME/.local/bin/brave-ram
+2831537 /opt/brave-bin/brave --user-data-dir=/tmp/brave-user --disk-cache-dir=/tmp/brave-cache</code></pre>
+                </li>
+            </ol>
+            <div class="success">
+                <p><strong>Congratulations!</strong> You are now running Brave from RAM. When you close the browser window, the script will automatically save your session (bookmarks, history, tabs) back to your hard drive.</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
