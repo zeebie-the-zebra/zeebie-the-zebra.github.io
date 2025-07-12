@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arch Linux Tutorial: Dual 4k Monitor Spanned Wallpaper Slideshow</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+            margin-top: 1.5em;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+        }
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: "Fira Code", "Consolas", "Monaco", monospace;
+            font-size: 0.9em;
+        }
+        code {
+            font-family: "Fira Code", "Consolas", "Monaco", monospace;
+        }
+        p > code, li > code {
+            /* CHANGE: softer red for dark-mode readability */
+            background-color: #f3f4f6;
+            color: #b31d28;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        .note {
+            background-color: #e7f3fe;
+            border-left: 5px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .note strong {
+            color: #1a78c2;
+        }
+        .warning {
+            background-color: #fffbe6;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .warning strong {
+            color: #c79100;
+        }
+        /* CHANGE: details/summary styling for collapsible sections */
+        details {
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 0.5em 0.5em 0;
+            margin: 1em 0;
+        }
+        summary {
+            font-weight: bold;
+            margin: -0.5em -0.5em 0;
+            padding: 0.5em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Dual 4k Monitor Spanned Wallpaper Slideshow on Arch Linux + KDE Plasma</h1>
+
+    <div class="warning">
+        <p><strong>IMPORTANT:</strong> This tutorial is set up to <strong>use</strong>  Active Blur. A plasma wallpaper plugin that blurs the wallpaper when a window is active. It can be downloaded from the <strong><a href="https://www.pling.com/p/2134907/">KDE Store</a></strong> or via the <strong>"Get New Plugins"</strong> button in the KDE Plasma wallpaper manager.</p>
+    </div>
+
+
+    <p>This tutorial will guide you through creating a script that automatically selects a random high-resolution wallpaper, splits it in half, and sets it across your two monitors for a seamless, spanned effect. We will then automate this script to run periodically using a <strong>systemd user timer</strong>.</p>
+
+
+    <details>
+        <summary>🧪 Pre-flight checklist – run this once</summary>
+        <pre><code>
+# 1. Verify tools
+which magick qdbus6 kwriteconfig6 kscreen-doctor
+
+# 2. Verify Active Blur plugin
+plasmapkg2 --list | grep -i blur || echo "Install from KDE Store!"
+
+        </code></pre>
+    </details>
+
+    <h2>Step 1: Prerequisites & Requirements</h2>
+    <p>Before we create the script, we need to ensure the necessary tools are installed on your system. The script relies on ImageMagick for image processing and various command-line tools to interact with the KDE Plasma desktop.</p>
+    <p>Open a terminal and run the following command to install the required packages:</p>
+    <pre><code>sudo pacman -S imagemagick qt6-tools kconfig</code></pre>
+    <p>Here's what each package provides:</p>
+    <ul>
+        <li><code>imagemagick</code>: Provides the <code>magick</code> command to split the wallpaper images.</li>
+        <li><code>qt6-tools</code>: Provides <code>qdbus6</code>, used to communicate with the Plasma shell.<br>(Is part of the Qt framework and KDE Plasma desktop environment and is likely already installed.)</li>
+        <li><code>kconfig</code>: Provides <code>kwriteconfig6</code>, a fallback method for setting the wallpaper.<br>(Is part of the Qt framework and KDE Plasma desktop environment and is likely already installed.)</li>
+    </ul>
+
+    <h2>Step 2: Find Your Monitor Indexes</h2>
+    <p>The script needs to know which monitor is which. Plasma identifies monitors by a numeric index (starting from 0). To find the correct index for your left and right monitors, run the following command in your terminal:</p>
+    <pre><code>kscreen-doctor -o</code></pre>
+    <p>The output will list all connected displays. It will look something like this:</p>
+    <pre><code>Output: 1 Name: eDP-1 Enabled Current Pos: 0,1080 Modes: ...
+Output: 2 Name: DP-1 Enabled Current Pos: 1920,0 Modes: ...</code></pre>
+
+    <div class="note">
+        <p><strong>How to Read the Output:</strong>
+        <ul>
+            <li>The script uses a <strong>zero-based index</strong>. This means <code>Output: 1</code> corresponds to index <code>0</code>, <code>Output: 2</code> corresponds to index <code>1</code>, and so on.</li>
+            <li>Look at the <code>Pos: X,Y</code> value to determine which monitor is on the left (the one with X-coordinate <code>0</code>).</li>
+            <li>In the example above, <code>eDP-1</code> is at <code>Pos: 0,1080</code> (left) and <code>DP-1</code> is at <code>Pos: 1920,0</code> (right).
+                <ul>
+                    <li>The Left Monitor (eDP-1) is <code>Output: 1</code>, so its index is <code>0</code>.</li>
+                    <li>The Right Monitor (DP-1) is <code>Output: 2</code>, so its index is <code>1</code>.</li>
+                </ul>
+            </li>
+        </ul>
+        <strong>Take note of the correct index for your left and right monitors. You will need them in the next step.</strong>
+        </p>
+    </div>
+
+    <h2>Step 3: The Wallpaper-Changing Script</h2>
+    <p>Now, let's create the bash script that will perform the magic.</p>
+
+    <h3>3.1 Create Directories</h3>
+    <p>First, we'll create a dedicated directory for our custom scripts and another directory to store the temporary split images.</p>
+    <pre><code>mkdir -p ~/.local/bin
+mkdir -p ~/.local/share/wallpapers/temp_split</code></pre>
+
+    <h3>3.2 Create the Script File</h3>
+    <p>Next, create the script file using your favorite text editor. We'll use <code>nano</code> in this example.</p>
+    <pre><code>nano ~/.local/bin/spanned_slideshow.sh</code></pre>
+
+    <h3>3.3 Paste the Script Code</h3>
+    <p>Paste the entire block of code below into the <code>nano</code> editor.</p>
+
+    <div class="warning">
+        <p><strong>IMPORTANT:</strong> You <strong>must</strong> edit the configuration variables at the top of the script to match your system, using the monitor indexes you found in Step 2.</p>
+    </div>
+
+    <!-- CHANGE: wrapped script in details for compactness -->
+    <details>
+        <summary>spanned_slideshow.sh</summary>
+<pre><code>#!/bin/bash
+
+#==============================================================================
+# SCRIPT CONFIGURATION
+#==============================================================================
+
+LEFT_MONITOR_INDEX=0
+RIGHT_MONITOR_INDEX=1
+
+# Directory of where your dual monitor wall papers are located. If your wallpapers are located at "/home/zeebie/Pictures/Wallpapers/Anime", it would become "$HOME/Pictures/Wallpapers/Anime"
+SOURCE_DIR="$HOME/Pictures/Wallpapers/Dual_4K"
+
+# User Home Location, unlikely you need to change this. "$HOME" could be replaced with "/home/zeebie/" but using "$HOME" is eaiser
+USER_HOME="$HOME"
+
+# Active Blur Plugin Configuration
+ACTIVE_BLUR_PLUGIN="a2n.blur"
+
+# Auto-restart plasma shell if commands fail (set to true/false)
+AUTO_RESTART_PLASMA=true
+
+#==============================================================================
+# HELPER FUNCTIONS
+#==============================================================================
+
+# Function to test if plasma shell is responsive
+test_plasma_responsive() {
+    local test_result
+    test_result=$(timeout 5 qdbus6 org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "print('test')" 2>/dev/null)
+    [ "$test_result" = "test" ]
+}
+
+# Function to restart plasma shell
+restart_plasma_shell() {
+    echo "[INFO] Restarting plasma shell..."
+    plasmashell --replace & disown
+
+    # Wait for plasma to fully start
+    echo "[INFO] Waiting for plasma shell to restart..."
+    sleep 3
+
+    # Wait for plasma to be responsive
+    local max_wait=15
+    local wait_count=0
+    while [ $wait_count -lt $max_wait ]; do
+        if test_plasma_responsive; then
+            echo "[INFO] Plasma shell is responsive again."
+            return 0
+        fi
+        sleep 1
+        wait_count=$((wait_count + 1))
+    done
+
+    echo "[WARNING] Plasma shell may not be fully responsive yet."
+    return 1
+}
+
+# Function to execute plasma script with retry logic
+execute_plasma_script() {
+    local script="$1"
+    local max_attempts=2
+    local attempt=1
+
+    while [ $attempt -le $max_attempts ]; do
+        echo "[INFO] Executing plasma script (attempt $attempt/$max_attempts)..."
+
+        if timeout 10 qdbus6 org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "$script" 2>/dev/null; then
+            echo "[SUCCESS] Plasma script executed successfully."
+            return 0
+        else
+            echo "[WARNING] Plasma script execution failed on attempt $attempt."
+
+            if [ $attempt -lt $max_attempts ] && [ "$AUTO_RESTART_PLASMA" = true ]; then
+                echo "[INFO] Auto-restart enabled, restarting plasma shell..."
+                restart_plasma_shell
+                sleep 2
+            fi
+        fi
+
+        attempt=$((attempt + 1))
+    done
+
+    echo "[ERROR] All plasma script execution attempts failed."
+    return 1
+}
+
+#==============================================================================
+# STATIC CONFIGURATION & SCRIPT LOGIC
+#==============================================================================
+
+TEMP_DIR="$USER_HOME/.local/share/wallpapers/temp_split"
+
+# --- Main Logic ---
+echo "--- Starting Spanned Slideshow with Active Blur Support ---"
+mkdir -p "$TEMP_DIR"
+
+# Ignore small / wrong-aspect images
+MIN_WIDTH=7680
+
+WALLPAPER=$(find "$SOURCE_DIR" -type f \( -iname \*.jpg -o -iname \*.jpeg -o -iname \*.png \) -exec identify -format '%w %i\n' {} + | awk -v min=$MIN_WIDTH '$1 >= min {print $2}' | shuf -n 1)
+
+if [ -z "$WALLPAPER" ]; then
+    echo "[ERROR] No images ≥${MIN_WIDTH}px wide found. Exiting."
+    exit 1
+fi
+
+echo "[INFO] Selected wallpaper: $WALLPAPER"
+magick "$WALLPAPER" -crop 2x1@ +repage "$TEMP_DIR/split.png"
+
+LEFT_IMG_PATH="${TEMP_DIR}/split-0.png"
+RIGHT_IMG_PATH="${TEMP_DIR}/split-1.png"
+
+echo "[INFO] Applying wallpapers via D-Bus with Active Blur support..."
+
+# Check if plasma is responsive before starting
+if ! test_plasma_responsive; then
+    echo "[WARNING] Plasma shell is not responsive, attempting restart..."
+    if [ "$AUTO_RESTART_PLASMA" = true ]; then
+        restart_plasma_shell
+    else
+        echo "[ERROR] Plasma shell is not responsive. Try running: plasmashell --replace & disown"
+        exit 1
+    fi
+fi
+
+# Flush wallpaper cache before setting new images
+FLUSH_CODE="
+var allDesktops = desktops();
+for (i = 0; i < allDesktops.length; ++i) {
+    allDesktops[i].currentConfigGroup = ['Wallpaper', '${ACTIVE_BLUR_PLUGIN}', 'General'];
+    allDesktops[i].writeConfig('Image', '');
+    allDesktops[i].reloadConfig();
+}"
+execute_plasma_script "$FLUSH_CODE"
+
+# Method 1: Set wallpaper with Active Blur plugin
+WALLPAPER_CODE="
+var allDesktops = desktops();
+print('Found ' + allDesktops.length + ' desktops');
+
+for (i = 0; i < allDesktops.length; i++) {
+    var desktop = allDesktops[i];
+
+    // Set wallpaper plugin to Active Blur
+    desktop.wallpaperPlugin = '${ACTIVE_BLUR_PLUGIN}';
+
+    // Configure Active Blur plugin
+    desktop.currentConfigGroup = Array('Wallpaper', '${ACTIVE_BLUR_PLUGIN}', 'General');
+
+    // Set the background image
+    if (i === ${LEFT_MONITOR_INDEX}) {
+        desktop.writeConfig('Image', 'file://${LEFT_IMG_PATH}');
+        print('Set left monitor wallpaper: ${LEFT_IMG_PATH}');
+    } else if (i === ${RIGHT_MONITOR_INDEX}) {
+        desktop.writeConfig('Image', 'file://${RIGHT_IMG_PATH}');
+        print('Set right monitor wallpaper: ${RIGHT_IMG_PATH}');
+    }
+
+    // Active Blur specific settings
+    // FillMode values for a2n.blur: 0=Scaled, 1=Scaled and Cropped, 2=Centered, 3=Tiled, 4=Center Tiled, 5=Scaled and Fit
+    desktop.writeConfig('FillMode', 1); // Scaled and Cropped for a2n.blur
+    desktop.writeConfig('BlurRadius', 60); // Adjust blur strength (0-100)
+    desktop.writeConfig('BlurEnabled', true);
+
+    // Optional: Set blur transition settings if supported
+    desktop.writeConfig('TransitionDuration', 300);
+    desktop.writeConfig('UpdateInterval', 100);
+
+    desktop.reloadConfig();
+}
+"
+
+# Execute the wallpaper setting with retry logic
+execute_plasma_script "$WALLPAPER_CODE"
+wallpaper_success=$?
+
+# Method 2: Fallback with alternative plugin names
+if [ $wallpaper_success -ne 0 ]; then
+    echo "[INFO] Primary method failed, trying alternative Active Blur plugin names..."
+
+    for alt_plugin in "org.kde.activeblur" "activeblur" "com.github.korapp.activeblur"; do
+        echo "[INFO] Trying plugin: $alt_plugin"
+
+        ALT_CODE="
+        var allDesktops = desktops();
+        for (i = 0; i < allDesktops.length; i++) {
+            var desktop = allDesktops[i];
+            desktop.wallpaperPlugin = '${alt_plugin}';
+            desktop.currentConfigGroup = Array('Wallpaper', '${alt_plugin}', 'General');
+
+            if (i === ${LEFT_MONITOR_INDEX}) {
+                desktop.writeConfig('Image', 'file://${LEFT_IMG_PATH}');
+            } else if (i === ${RIGHT_MONITOR_INDEX}) {
+                desktop.writeConfig('Image', 'file://${RIGHT_IMG_PATH}');
+            }
+
+            desktop.writeConfig('FillMode', 1); // Scaled and Cropped for a2n.blur
+            desktop.writeConfig('BlurRadius', 60);
+            desktop.writeConfig('BlurEnabled', true);
+            desktop.reloadConfig();
+        }
+        "
+
+        if execute_plasma_script "$ALT_CODE"; then
+            echo "[SUCCESS] Alternative plugin '$alt_plugin' worked!"
+            wallpaper_success=0
+            break
+        fi
+    done
+fi
+
+# Method 3: Direct configuration file update for Active Blur
+echo "[INFO] Updating KDE configuration files directly for Active Blur..."
+
+PLASMA_CONFIG="$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc"
+
+if [ -f "$PLASMA_CONFIG" ]; then
+    echo "[INFO] Found plasma config file, updating Active Blur settings..."
+
+    # Update wallpaper plugin and settings for left monitor
+    kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group "Containments" --group "1" --group "Wallpaper" --key "plugin" "$ACTIVE_BLUR_PLUGIN"
+    kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group "Containments" --group "1" --group "Wallpaper" --group "$ACTIVE_BLUR_PLUGIN" --group "General" --key "Image" "file://${LEFT_IMG_PATH}"
+    kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group "Containments" --group "1" --group "Wallpaper" --group "$ACTIVE_BLUR_PLUGIN" --group "General" --key "BlurRadius" "60"
+    kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group "Containments" --group "1" --group "Wallpaper" --group "$ACTIVE_BLUR_PLUGIN" --group "General" --key "BlurEnabled" "true"
+
+    # Update wallpaper plugin and settings for right monitor
+    kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group "Containments" --group "2" --group "Wallpaper" --key "plugin" "$ACTIVE_BLUR_PLUGIN"
+    kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group "Containments" --group "2" --group "Wallpaper" --group "$ACTIVE_BLUR_PLUGIN" --group "General" --key "Image" "file://${RIGHT_IMG_PATH}"
+    kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group "Containments" --group "2" --group "Wallpaper" --group "$ACTIVE_BLUR_PLUGIN" --group "General" --key "BlurRadius" "60"
+    kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group "Containments" --group "2" --group "Wallpaper" --group "$ACTIVE_BLUR_PLUGIN" --group "General" --key "BlurEnabled" "true"
+fi
+
+# Method 4: Enhanced reload with Active Blur considerations
+echo "[INFO] Performing final configuration refresh..."
+
+REFRESH_CODE="
+var allDesktops = desktops();
+for (i = 0; i < allDesktops.length; i++) {
+    var desktop = allDesktops[i];
+
+    // Force reload the wallpaper plugin
+    desktop.wallpaperPlugin = '${ACTIVE_BLUR_PLUGIN}';
+
+    // Reload configuration
+    desktop.reloadConfig();
+}
+"
+
+execute_plasma_script "$REFRESH_CODE"
+
+# Method 5: Force refresh Active Blur plugin specifically
+echo "[INFO] Force refreshing Active Blur plugin..."
+
+FORCE_REFRESH_CODE="
+var allDesktops = desktops();
+for (i = 0; i < allDesktops.length; i++) {
+    var desktop = allDesktops[i];
+
+    // Temporarily switch to default plugin
+    desktop.wallpaperPlugin = 'org.kde.image';
+    desktop.reloadConfig();
+
+    // Wait a moment
+    sleep(200);
+
+    // Switch back to Active Blur
+    desktop.wallpaperPlugin = '${ACTIVE_BLUR_PLUGIN}';
+    desktop.currentConfigGroup = Array('Wallpaper', '${ACTIVE_BLUR_PLUGIN}', 'General');
+
+    if (i === ${LEFT_MONITOR_INDEX}) {
+        desktop.writeConfig('Image', 'file://${LEFT_IMG_PATH}');
+    } else if (i === ${RIGHT_MONITOR_INDEX}) {
+        desktop.writeConfig('Image', 'file://${RIGHT_IMG_PATH}');
+    }
+
+    desktop.writeConfig('FillMode', 1); // Scaled and Cropped for a2n.blur
+    desktop.writeConfig('BlurRadius', 60);
+    desktop.writeConfig('BlurEnabled', true);
+    desktop.reloadConfig();
+}
+"
+
+qdbus6 org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript "$FORCE_REFRESH_CODE"
+
+# Final status check
+if [ $wallpaper_success -eq 0 ]; then
+    echo "[SUCCESS] Active Blur wallpaper update process completed successfully."
+    echo "[INFO] Active Blur plugin should now be displaying the split wallpaper with blur effects."
+else
+    echo "[ERROR] Wallpaper update failed after all attempts."
+
+    if [ "$AUTO_RESTART_PLASMA" = true ]; then
+        echo "[INFO] Performing final plasma shell restart..."
+        restart_plasma_shell
+        echo "[INFO] Try running the script again in a few seconds."
+    else
+        echo "[INFO] Try manually restarting plasma shell: plasmashell --replace & disown"
+    fi
+fi
+
+echo "[INFO] Script completed."
+echo "[INFO] If you continue to have issues, you can:"
+echo "       1. Set AUTO_RESTART_PLASMA=false to disable auto-restart"
+echo "       2. Check if Active Blur plugin is properly installed"
+echo "       3. Verify the correct plugin name matches 'a2n.blur'"
+echo "       4. Try running 'systemctl --user restart plasma-plasmashell' instead"
+</code></pre>
+    </details>
+
+    <p>After pasting the code and editing your configuration, save the file and exit the editor. (In <code>nano</code>, press <kbd>Ctrl+O</kbd>, then <kbd>Enter</kbd> to save, and <kbd>Ctrl+X</kbd> to exit).</p>
+
+    <h3>3.4 Make the Script Executable</h3>
+    <p>The script needs permission to be run. Make it executable with the following command:</p>
+    <pre><code>chmod +x ~/.local/bin/spanned_slideshow.sh</code></pre>
+
+    <h2>Step 4: Test the Script</h2>
+    <p>Before automating, run the script once manually from your terminal to ensure it works correctly and that you configured the paths and monitor indexes properly.</p>
+    <pre><code>~/.local/bin/spanned_slideshow.sh</code></pre>
+    <p>Your wallpaper should change to a randomly selected, perfectly spanned image. If it doesn't work, review the output in the terminal for any errors. The most common issues are incorrect paths or monitor indexes in the configuration section.</p>
+
+    <h2>Step 5: Automating with a systemd User Timer</h2>
+    <p>Running the script manually is great, but we want it to happen automatically. Using a <strong>systemd user timer</strong> is the modern and robust way to run a task on a schedule within your user session, without needing <code>sudo</code>.</p>
+
+    <h3>5.1 Create the systemd Service File</h3>
+    <p>This file tells systemd <em>what</em> to run.</p>
+    <pre><code>mkdir -p ~/.config/systemd/user/
+nano ~/.config/systemd/user/spanned-slideshow.service</code></pre>
+    <p>Paste this content into the file. No edits are needed if you used the recommended script path.</p>
+    <!-- CHANGE: added logging directive -->
+<pre><code class="language-ini">[Unit]
+Description=Spanned Wallpaper Slideshow Service
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/spanned_slideshow.sh
+
+[Install]
+WantedBy=default.target
+</code></pre>
+    <p>Save and exit the editor.</p>
+
+    <h3>5.2 Create the systemd Timer File</h3>
+    <p>This file tells systemd <em>when</em> to run the service.</p>
+    <pre><code>nano ~/.config/systemd/user/spanned-slideshow.timer</code></pre>
+    <p>Paste the following content. You can change the schedule to your liking.</p>
+    <div class="note">
+        <p><strong>Customization:</strong> The line <code>OnUnitActiveSec=15min</code> sets the frequency. You can change this to whatever you prefer, for example: <code>5m</code> for 5 minutes, <code>1h</code> for 1 hour, or <code>45min</code> for 45 minutes.</p>
+    </div>
+<pre><code class="language-ini">[Unit]
+Description=Run Spanned Wallpaper Slideshow periodically
+
+[Timer]
+# Run 1 minute after boot/login
+OnBootSec=1min
+# Run every 15 minutes thereafter
+OnUnitActiveSec=15min
+Unit=spanned-slideshow.service
+
+[Install]
+WantedBy=timers.target
+</code></pre>
+    <p>Save and exit the editor.</p>
+
+    <h2>Step 6: Enable and Verify the Timer</h2>
+    <p>Finally, we need to tell systemd to start paying attention to our new timer. We do this with the <code>--user</code> flag because this is a user service, not a system-wide one.</p>
+    <p>Enable and start the timer immediately with:</p>
+    <pre><code>systemctl --user daemon-reload
+systemctl --user enable --now spanned-slideshow.timer</code></pre>
+
+    <p>You can check the status of your timer to see when it's scheduled to run next:</p>
+    <pre><code>systemctl --user status spanned-slideshow.timer</code></pre>
+    <p>The output should show that the timer is "active (waiting)" and list when it will next trigger the service.</p>
+
+    <details>
+        <summary>🛑 Want to stop or uninstall the timer?</summary>
+        <pre><code>systemctl --user disable --now spanned-slideshow.timer</code></pre>
+    </details>
+
+    <h2>Viewing the Service Logs</h2>
+    <p>Since the service logs directly to the systemd journal, you can easily check its output to confirm it's running correctly or to debug any errors from your script. To view the logs specifically for this service, use the <code>journalctl</code> command:</p>
+    <pre><code>journalctl --user -u spanned-slideshow.service</code></pre>
+    <p>To watch the logs in real-time, which is very useful for debugging, use the <code>-f</code> (follow) flag:</p>
+    <pre><code>journalctl --user -fu spanned-slideshow.service</code></pre>
+
+
+
+
+
+    <hr>
+    <p style="text-align: center;">That's it! Your system will now automatically change your wallpaper to a new, beautiful spanned image on your configured schedule.</p>
+</div>
+
+</body>
+</html>
